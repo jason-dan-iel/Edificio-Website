@@ -1,15 +1,24 @@
 const express = require('express');
-const team = require('../models/coreTeam.js');
+const mongoose = require('mongoose')
+const member = require('../models/coreTeam');
 const router = express.Router();
 
 router.get('/', async (req, res) => {
-    const coreTeam = await team.find();
+    const coreTeam = await member.find();
     res.json(coreTeam);
 })
 
 router.post('/', async (req, res) => {
-    const member = req.body;
-    const newMember = team(member);
+    let newMember = req.body;
+    newMember = new member(newMember);
 
-    await newMember.save()
+    try{
+        newMember = await newMember.save()
+        res.json(newMember);
+    }catch(error){
+        console.log(error);
+    }
 })
+
+
+module.exports = router

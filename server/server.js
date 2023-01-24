@@ -13,9 +13,13 @@ app.use(cors());
 
 
 // importing all the routes 
+const teamRoute = require('./routes/teamRoute.js')
+
 
 // defining the routs
-app.use('/api/coreTeam', )
+app.use('/api/coreTeam', teamRoute);
+
+
 // connecting with the database 
 connect()
 
