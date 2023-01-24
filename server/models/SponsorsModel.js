@@ -17,4 +17,4 @@ const sponsorSchema = mongoose.Schema({
     }
 })
 
-module.exports = sponsorSchema
+module.exports = mongoose.model('Sponsor', sponsorSchema);
