@@ -14,6 +14,8 @@ app.use(cors());
 
 // importing all the routes 
 
+// defining the routs
+app.use('/api/coreTeam', )
 // connecting with the database 
 connect()
 
