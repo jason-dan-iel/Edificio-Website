@@ -9,3 +9,7 @@ router.route('/').get(async (req, res)=>{
 })
 
 // fetching all the sponsors by id 
+
+
+// exporting the route
+module.exports = router;

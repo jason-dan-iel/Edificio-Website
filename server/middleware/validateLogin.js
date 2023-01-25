@@ -1,4 +1,3 @@
-const express = require('express');
 const {loginValidation, registrationValidation} = require('../helpers/validation');
 
 const validateLogin = async (req, res, next) => {

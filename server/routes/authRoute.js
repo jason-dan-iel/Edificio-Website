@@ -7,5 +7,6 @@ router.route('/login').post(validateLogin, (req, res)=>{
 })
 
 router.route('/register').post(validateRegistration, (req, res) =>{
-    res.json('this is the main registration route')
 })
+
+module.exports = router;
