@@ -1,5 +1,5 @@
 const express = require('express');
-const {loginValidation} = require('../helpers/validation');
+const {loginValidation, registrationValidation} = require('../helpers/validation');
 
 const validateLogin = async (req, res, next) => {
     const userInfo = req.body;
@@ -9,6 +9,14 @@ const validateLogin = async (req, res, next) => {
 
 }
 
+const validateRegistration = async (req, res, next) =>{
+    const userInfor = req.body;
+    const result = registrationValidation.validateAsync(req.body);
+
+    console.log(result);
+}
+
 module.exports = {
-    validateLogin
+    validateLogin,
+    validateRegistration
 }

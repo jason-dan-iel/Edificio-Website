@@ -14,9 +14,11 @@ app.use(cors());
 
 // importing all the routes 
 const teamRoute = require('./routes/teamRoute.js')
+const authRoute = require('./routes/authRoute')
 
 
 // defining the routs
+app.use('/api/auth', authRoute);
 app.use('/api/coreTeam', teamRoute);
 
 
