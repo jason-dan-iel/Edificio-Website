@@ -2,10 +2,15 @@ const express = require('express');
 const router = express.Router()
 const { validateLogin, validateRegistration } = require('../middleware/validateLogin')
 const { registrationValidation } = require('../helpers/validation');
+const User = require('../models/UserModel')
 
-router.route('/login').post((req, res) => {
-    res.json('this is the main route')
+// writing the logic for login
+router.post('/login', async(req, res) =>{
+    const username = req.body.username;
+    const user = await User.findOne({username: username})
+    if(!user) res.status(400).json({message: "The user doesn't exist"})
 })
+
 
 router.post('/register', async (req, res) => {
     try {
