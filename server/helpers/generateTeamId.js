@@ -8,7 +8,6 @@ const generateTeamId = (req, res, next) => {
     // checking if the given user is a captain or not
     if(givenUser.captain == false){
         return;
-        next()
     }
 
     // generating the teamId
@@ -21,7 +20,6 @@ const generateTeamId = (req, res, next) => {
     const user = User.findOne({teamId: teamId})
     if(!user){
         return teamId;
-        next()
     }else{
         generateTeamId();
     }
