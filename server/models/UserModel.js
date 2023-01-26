@@ -24,6 +24,16 @@ const UserSchema = mongoose.Schema({
     college: {
         type: String,
         required: true
+    },
+
+    teamCaptain: {
+        type: Boolean,
+        default: false,
+    },
+
+    teamId: {
+        type: String,
+        default: null
     }
 })
 
