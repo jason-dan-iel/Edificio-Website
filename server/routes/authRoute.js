@@ -1,12 +1,13 @@
 const express = require('express');
 const router = express.Router()
-const { validateLogin, checkUsername, verifyUser, addToken, validateRegistration } = require('../middleware/validateLogin')
+const { validateLogin, checkUsername, verifyUser, addToken } = require('../middleware/validateLogin')
+const {getUsers} = require('../middleware/getUsers');
 const { registrationValidation } = require('../helpers/validation');
 const User = require('../models/UserModel')
 const bcrypt = require('bcryptjs');
 
 // getting all the users
-router.get('/users', )
+router.get('/users', getUsers);
 
 // writing the logic for login
 router.post('/login', validateLogin, checkUsername, verifyUser, addToken,)
