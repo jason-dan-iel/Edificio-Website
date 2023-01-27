@@ -1,19 +1,15 @@
 const express = require('express');
 const router = express.Router()
-const { validateLogin, validateRegistration } = require('../middleware/validateLogin')
+const { validateLogin, checkUsername, verifyUser, addToken, validateRegistration } = require('../middleware/validateLogin')
 const { registrationValidation } = require('../helpers/validation');
 const User = require('../models/UserModel')
 const bcrypt = require('bcryptjs');
 
+// getting all the users
+router.get('/users', )
+
 // writing the logic for login
-router.post('/login', validateLogin, async(req, res) =>{
-
-
-    // checking for existing user
-    const username = req.body.username;
-    const user = await User.findOne({username: username})
-    if(!user) res.status(400).json({message: "The user doesn't exist"})
-})
+router.post('/login', validateLogin, checkUsername, verifyUser, addToken,)
 
 
 // writing the logic for register 
@@ -58,6 +54,8 @@ router.post('/register', async (req, res) => {
         res.status(400).json(error);
     }
 })
+
+
 
 
 

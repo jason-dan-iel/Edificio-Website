@@ -1,5 +1,7 @@
 const {loginValidation, registrationValidation} = require('../helpers/validation');
 const UserModel = require('../models/UserModel');
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
 
 const validateLogin = async (req, res, next) => {
     const userInfo = req.body;
@@ -17,15 +19,25 @@ const checkUsername = async (req, res, next) => {
     next();
 }
 
-const validateRegistration = async (req, res, next) =>{
-    const userInfor = req.body;
-    const result = registrationValidation.validateAsync(req.body);
+const verifyUser = async(req, res, next) => {
+    const password = req.body.passowrd;
+    const user = UserModel.findOne({username: req.body.username})
+    const result = bcrypt.compare(password, user.password)
 
-    console.log(result);
+    if(!result) res.status(400).json({message: "The password is incorrect"});
+
+    next();
 }
+
+const addToken = async (req, res, next) => {
+    const token = jwt.sing({username: req.body.username}, process.env.TOKEN_SECRET);
+    res.header('auth-token', token).send(token);
+}
+
 
 module.exports = {
     validateLogin,
     checkUsername,
-    validateRegistration
+    verifyUser, 
+    addToken
 }
