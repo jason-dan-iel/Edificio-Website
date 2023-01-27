@@ -27,5 +27,5 @@ app.use('/api/coreTeam', teamRoute);
 connect()
 
 app.listen(port, ()=>{
-    console.log("Server is listening on port 8000");
+    console.log("The server is live on https://localhost:8000");
 })
