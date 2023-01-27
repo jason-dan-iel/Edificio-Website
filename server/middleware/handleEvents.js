@@ -1,5 +1,4 @@
 const express = require('express');
-const router = express.Router();
 const EventsModel = require('../models/eventsModel');
 
 const getEvents = async (req, res)=>{
@@ -19,7 +18,7 @@ const addEvent = async(req, res)=>{
     }
 }
 
-modeule.exports = {
-    getEvents, 
-    addEvent
+module.exports = {
+    getEvents,
+    addEvent,
 }

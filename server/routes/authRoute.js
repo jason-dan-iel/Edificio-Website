@@ -6,15 +6,8 @@ const User = require('../models/UserModel')
 const bcrypt = require('bcryptjs');
 
 // writing the logic for login
-router.post('/login', async(req, res) =>{
+router.post('/login', validateLogin, async(req, res) =>{
 
-    // checking for valid entries 
-    try {
-        const result = registrationValidation.validateAsync(req.body);
-        res.json.status(200).json(result)    
-    } catch (error) {
-        res.json(error);
-    }
 
     // checking for existing user
     const username = req.body.username;

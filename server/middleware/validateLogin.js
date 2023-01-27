@@ -1,11 +1,20 @@
 const {loginValidation, registrationValidation} = require('../helpers/validation');
+const UserModel = require('../models/UserModel');
 
 const validateLogin = async (req, res, next) => {
     const userInfo = req.body;
-    const result = await loginValidation.validateAsync(req.body);
+    const {error} = await loginValidation.validateAsync(req.body);
+    if(error) res.status(400).json(error.details[0].message);
 
-    console.log('This is coming from the middleware');
+    next();
+}
 
+const checkUsername = async (req, res, next) => {
+    const username = req.body.username;
+    const user = UserModel.findOne({username: username});
+    if(!user) res.status(400).json({message: "The user doesn't exist"});
+
+    next();
 }
 
 const validateRegistration = async (req, res, next) =>{
@@ -17,5 +26,6 @@ const validateRegistration = async (req, res, next) =>{
 
 module.exports = {
     validateLogin,
+    checkUsername,
     validateRegistration
 }
