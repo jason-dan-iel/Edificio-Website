@@ -1,14 +1,10 @@
 const express = require('express')
-const Sponsor = require('../models/SponsorsModel')
 const router = express.Router()
+const { getSponsors, addSponsor } = require('../middleware/handleSponsors')
 
-// fetching all the sponsors 
-router.route('/').get(async (req, res)=>{
-    const sponsors = Sponsor.findOne();
-    res.json(sponsors);
-})
-
-// fetching all the sponsors by id 
+ 
+router.get('/', getSponsors)
+router.post('/', addSponsor)
 
 
 // exporting the route

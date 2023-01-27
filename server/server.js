@@ -21,6 +21,7 @@ const sponsorRoute = require('./routes/sponsorsRoute')
 // defining the routs
 app.use('/api/auth/', authRoute);
 app.use('/api/coreTeam', teamRoute);
+app.use('/api/sponsors', sponsorRoute);
 
 
 // connecting with the database 
