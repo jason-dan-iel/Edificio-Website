@@ -4,6 +4,7 @@ import About from './pages/about';
 import Contact from './pages/contact';
 import Event from './pages/events';
 import { useState } from 'react';
+import "./App.css"
 
 
 function App() {

@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        Ubuntu: ['Ubuntu Condensed', 'sans-serif'],
+        Kanit: ["Kanit", "sans-serif"],
       },
     },
   },

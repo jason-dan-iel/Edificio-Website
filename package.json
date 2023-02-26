@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@react-three/fiber": "^8.11.5",
     "jsonwebtoken": "^9.0.0"
   }
 }
