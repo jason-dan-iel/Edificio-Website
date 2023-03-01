@@ -2,5 +2,8 @@
   "dependencies": {
     "@react-three/fiber": "^8.11.5",
     "jsonwebtoken": "^9.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
   }
 }
