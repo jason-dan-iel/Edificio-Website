@@ -6,9 +6,9 @@ export default function Header({
     linkUrl="#"
 }){
     return(
-        <div className="mb-10">
-            <div className="flex justify-center">
-                <img alt="" className="h-14 w-14"
+        <div className="">
+            <div className="flex justify-center ">
+                <img alt="" className="h-14 w-14 mt-48"
                     src="/logo_d.png"/>
             </div>
             <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">

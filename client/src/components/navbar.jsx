@@ -18,7 +18,7 @@ export default function Navbar(){
                         <li><NavLink to="/events" className="px-4" >Events</NavLink> </li>
                         <li><NavLink to="/ourteam" className="px-4" >Our Team</NavLink> </li>
                         <li><NavLink to="/login" className="px-4" >Log In</NavLink> </li>
-                        <li><NavLink to="/register" className="px-4" >Register</NavLink> </li>
+                        <li><NavLink to="/signup" className="px-4" >Register</NavLink> </li>
                     </ul>
                 </section>
             </ul>

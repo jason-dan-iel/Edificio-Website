@@ -10,7 +10,7 @@ import ParticlesConfig from "../components/particleConfig";
 export default function HomePage(){
     return (
         <main>
-            <ParticlesConfig />
+            {/* <ParticlesConfig /> */}
             <Hero />
             <AboutUs />
             <EventSection />
