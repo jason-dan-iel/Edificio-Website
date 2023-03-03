@@ -23,7 +23,7 @@ export default function ParticlesConfig() {
           options={{
               background: {
                   color: {
-                      value: "#12263f",
+                      value: "#89E1C0",
                   },
               },
               fullScreen: {
