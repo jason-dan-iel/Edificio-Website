@@ -33,7 +33,7 @@ router.post('/register', async (req, res) => {
     const checkEmail = User.findOne({email: email});
 
     if(checkUsername) res.status(200).json({message: "The username already exists"})
-    if(checkUsername) res.status(200).json({message: "The email already exists"})
+    if(checkEmail) res.status(200).json({message: "The email already exists"})
 
     // hashing the password
     const salt = bcrypt.genSalt(10);

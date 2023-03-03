@@ -1,23 +1,33 @@
-import { useState } from "react";
-import SignupPage from "./pages/Signup";
-import LoginPage from "./pages/Login";
-import HomePage from "./pages/Home";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import React from 'react';
+import ParticlesConfig from './components/particleConfig';
+import { BrowserRouter as Router, Routes, Route}from 'react-router-dom';
+import Home from './pages/home';
+import OurTeam from './pages/OurTeam';
+import Register from './pages/OurTeam copy';
+import Login from './pages/Login';
+import Navbar from './components/Navbar';
+import Partbg from './components/particles';
 
 const App = () => {
-    return (
-        <div className="min-h-full h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-md w-full space-y-8">
-         <BrowserRouter>
-            <Routes>
-                {/* <Route path = "/" element = {<HomePage />} /> */}
-                <Route path="/" element={<LoginPage/>} />
-                <Route path="/signup" element={<SignupPage/>} />
-            </Routes>
-          </BrowserRouter>
-        </div>
-      </div>
+  return (
+    <div>
+      <ParticlesConfig />
+      {/* <Partbg/> */}
+      <Router>
+      <Navbar />
+        <Routes>
+          <Route path = '/' element={<Home />} />
+          <Route path = '/events' element={< Event/>} />
+          <Route path = '/ourteam' element={<OurTeam/>} />
+          <Route path = '/login' element={<Login/>} />
+          <Route path = '/register' element={<Register/>} />
+        </Routes>
+      </Router>
+
+    </div>
+
+
+
   );
 };
 

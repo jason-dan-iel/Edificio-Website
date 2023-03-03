@@ -1,9 +1,10 @@
 import React from "react";
+import * as FaIcons from "react-icons/fa";
 
 export default function Footer(){
     return (
-        <main className="bg-pink-50 py-10">
-            <footer className="flex justify-between max-w-6xl m-auto footer">
+        <main className="bg-[#133661]  text-white">
+            <footer className="flex justify-between max-w-6xl m-auto footer py-10">
                 <ul className="basis-1/3">
                     <h1>Edificio</h1>
                     <hr className="w-1/6 pb-3"/>
@@ -29,10 +30,15 @@ export default function Footer(){
                 <ul className="basis-1/4">
                     <h1>Socials</h1>
                     <hr className="w-1/6 pb-3"/>
-                    <li>Instagram</li>
-                    <li>Linkedin</li>
+                    <div className="flex gap-4 text-2xl hover:cursor-pointer">
+                        <FaIcons.FaInstagram />
+                        <FaIcons.FaLinkedin />
+                    </div>
                 </ul>
             </footer>
+            <section className="py-5 bg-[#12263f]">
+                <p className="text-center">Made with &#9829; by the Web Dev Team of Edificio</p>
+            </section>
         </main>
 
     )
