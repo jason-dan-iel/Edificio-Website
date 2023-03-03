@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer(){
     return (
-        <main className="bg-pink-50 py-10">
+        <main className="bg-[#0b3045] py-10">
             <footer className="flex justify-between max-w-6xl m-auto footer">
                 <ul className="basis-1/3">
                     <h1>Edificio</h1>

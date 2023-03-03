@@ -23,7 +23,7 @@ export default function ParticlesConfig() {
           options={{
               background: {
                   color: {
-                      value: "#0d47a1",
+                      value: "#12263f",
                   },
               },
               fullScreen: {
@@ -55,7 +55,7 @@ export default function ParticlesConfig() {
               },
               particles: {
                   color: {
-                      value: "#ffffff",
+                      value: "#000000",
                   },
                   links: {
                       color: "#ffffff",
@@ -65,7 +65,7 @@ export default function ParticlesConfig() {
                       width: 1,
                   },
                   collisions: {
-                      enable: true,
+                      enable: false,
                   },
                   move: {
                       directions: "none",
@@ -82,15 +82,15 @@ export default function ParticlesConfig() {
                           enable: true,
                           area: 800,
                       },
-                      value: 3,
+                      value: 5,
                   },
                   opacity: {
                       value: 0.2,
                   },
                   shape: {
-                      type: "polygon",
+                      type: 'polygon',
                       polygon: {
-                        sides: 6,
+                        sides: 4,
                       }
                   },
                   size: {
