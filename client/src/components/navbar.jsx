@@ -1,5 +1,4 @@
 import React from "react"; 
-import logo from '../assets/EdificioLogo.png' 
 import { NavLink } from "react-router-dom";
 
 export default function Navbar(){
@@ -7,10 +6,10 @@ export default function Navbar(){
         console.log("hello world")
     }
     return(
-        <nav className="h-1/6 fixed navbar w-screen px-20 bg-transparent text-2xl text-white">
+        <nav className=" fixed navbar w-screen px-20 text-2xl text-white bg-[#133661] ">
             <ul className="flex justify-between items-center">
                 <section>
-                    <img src={logo} alt="" className="h-full w-20"/>
+                    <img src="/logo_l.png" alt="" className="h-16 w-16"/>
                 </section>
                 <section>
                     <ul className="flex items-center">
