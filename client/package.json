@@ -17,6 +17,7 @@
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.8.2",
     "react-tsparticles": "^2.9.3",
+    "starfield-react": "^3.1.0-dev-5",
     "tsparticles": "^2.9.3"
   },
   "devDependencies": {

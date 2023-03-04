@@ -23,7 +23,7 @@ export default function ParticlesConfig() {
           options={{
               background: {
                   color: {
-                      value: "#89E1C0",
+                      value: "#000000",
                   },
               },
               fullScreen: {
@@ -55,13 +55,13 @@ export default function ParticlesConfig() {
               },
               particles: {
                   color: {
-                      value: "#000000",
+                      value: "#ffffff",
                   },
                   links: {
                       color: "#ffffff",
                       distance: 150,
                       enable: false,
-                      opacity: 0.05,
+                      opacity: 0.005,
                       width: 1,
                   },
                   collisions: {
@@ -74,27 +74,28 @@ export default function ParticlesConfig() {
                           default: "bounce",
                       },
                       random: false,
-                      speed: 6,
+                      speed: 4.5,
                       straight: false,
                   },
                   number: {
                       density: {
                           enable: true,
-                          area: 800,
+                          area: 390,
                       },
-                      value: 5,
+                      value: 140,
                   },
                   opacity: {
-                      value: 0.2,
+                      value: 0.44,
                   },
                   shape: {
-                      type: 'polygon',
-                      polygon: {
-                        sides: 4,
+                      type: 'star',
+                      star: {
+                        sides: 5,
+                        insert:2
                       }
                   },
                   size: {
-                      value: 150,
+                      value: 2,
                   },
               },
               detectRetina: true,
