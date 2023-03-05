@@ -33,7 +33,7 @@ const App = () => {
 
           {/* Events Routing */}
           <Route path = '/eureka' element={< Eureka/>} />
-          <Route path = '/pixivilis' element={<Pixivillis/>} />
+          <Route path = '/piccivils' element={<Pixivillis/>} />
           <Route path = '/symposium' element={<Sympossium/>} />
           <Route path = '/cadacetto' element={<Cadacetto/>} />
           <Route path = '/ai4ci' element={< AI4CI/>} />

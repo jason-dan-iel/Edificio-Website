@@ -6,10 +6,10 @@ export default function Events() {
     <section>
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
         <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
-            <h2 className="mt-8 mb-2 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Events</h2>
+            <h2 className="mt-8 mb-2 text-4xl tracking-tight font-extrabold text-white">Events</h2>
 
         </div>
-        <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 mg:grid-cols-3 lg:grid-cols-4">
+        <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 mg:grid-cols-3 lg:grid-cols-3">
           <EventCard
             imgPath={"/logo_d.png"}
             heading="BRIDGE MAKING"
@@ -22,12 +22,7 @@ export default function Events() {
             content={"Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind"}
             linkURL="/civiq"
           />
-          <EventCard
-            imgPath={"/logo_d.png"}
-            heading="AI4CI"
-            content={"Loremadf a fa fa df af "}
-            linkURL="/ai4ci"
-          />
+
           <EventCard
             imgPath={"/logo_d.png"}
             heading="CADACETTO"
@@ -42,15 +37,9 @@ export default function Events() {
           />
           <EventCard
             imgPath={"/logo_d.png"}
-            heading="PIXIVILIS"
+            heading="PIC CIVILS"
             content={"Loremadf a fa fa df af "}
-            linkURL="/pixivilis"
-          />
-          <EventCard
-            imgPath={"/logo_d.png"}
-            heading="QUIZ MANIA"
-            content={"Loremadf a fa fa df af "}
-            linkURL="/quizmania"
+            linkURL="/piccivils"
           />
           <EventCard
             imgPath={"/logo_d.png"}

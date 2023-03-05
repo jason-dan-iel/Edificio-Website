@@ -13,7 +13,7 @@ export default function TeamCard({
         src={imgPath}
         alt=""
       />
-      <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+      <h3 className="mb-1 text-2xl font-bold tracking-tight text-white">
         {Name}
       </h3>
       <p>{Designation}</p>
