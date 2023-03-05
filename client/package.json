@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@frank-mayer/react-tag-cloud": "^1.1.1",
     "@heroicons/react": "^2.0.16",
     "react": "^18.2.0",
     "react-animation-on-scroll": "^5.1.0",

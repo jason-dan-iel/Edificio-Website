@@ -6,7 +6,7 @@ export default function OurTeam() {
     <section>
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
         <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
-          <h2 className="mt-8 mb-2 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+          <h2 className="mt-8 mb-2 text-4xl tracking-tight font-extrabold text-white">
             Our team
           </h2>
           <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
@@ -101,13 +101,13 @@ export default function OurTeam() {
             Designation={"Public Relation"}
           />
           <TeamCard
-            imgPath={"/team_photos/satwik_m.jpeg"}
+            imgPath={"/team_photos/psss_marketing.jpeg"}
             instaLink={"https://www.instagram.com/_p.s.s.satwik_/"}
             Name={"Sai Satwik"}
             Designation={"Marketing"}
           />
           <TeamCard
-            imgPath={"/team_photos/sid_m.jpeg"}
+            imgPath={"/team_photos/sidd_m.jpeg"}
             instaLink={"https://www.instagram.com/siddchauhan2002/"}
             Name={"Siddharth Chauhan"}
             Designation={"Marketing"}
