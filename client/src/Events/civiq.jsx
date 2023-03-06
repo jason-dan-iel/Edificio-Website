@@ -37,14 +37,14 @@ export default function Civiq(){
                       <li> CIVIL101 </li>
                       <li>Crusade The Concepts</li>
                     </ol>
-                    <ol className="mt-5 list-decimal">
-                        <li className="">First Round (All teams can participate)
+                    <ol className="my-5 list-decimal">
+                        <li className="font-semibold underline">First Round [CIVIL101] (All teams can participate)
                         </li>
                             <ol className="list-disc px-5">
                                 <li>Civil 101: To test the fact based civil engineering knowledge and a few conceptual questions</li>
                                 <li>The final score of round 1 will serve as the basis for the entry in round 2</li>
                             </ol>
-                        <li>Final Round
+                        <li className="font-semibold underline">Second Round [Crusade the Concepts]
                         </li>
                             <ol className="list-disc px-5">
                                 <li>Only the top five teams from round one will be eligible for this round</li>
@@ -52,8 +52,8 @@ export default function Civiq(){
                                 <li>Crusade the Concepts (brainstorming questions covering a range of topics within civil engineering, such as structural analysis, geotechnical engineering, transportation engineering, water resources engineering, and construction management)</li>
                             </ol>
                     </ol>
-                    <li>First round total score will be calculated on the basis of total scores in Civil 101 and Crusade the Concepts</li>
                   </ol>
+                    <li className="px-5">In case of a tie in round 2, teams will be given one or two subjective problem statements</li>
                 </ul>
               </div>
             </div>
