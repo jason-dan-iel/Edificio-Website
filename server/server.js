@@ -29,6 +29,8 @@ app.use('/api/events', eventsRoute);
 // connecting with the database 
 connect()
 
+
+
 app.listen(port, ()=>{
     console.log("The server is live on https://localhost:8000");
 })

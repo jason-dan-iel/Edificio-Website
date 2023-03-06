@@ -21,85 +21,115 @@ export default function ParticlesConfig() {
           init={particlesInit}
           loaded={particlesLoaded}
           options={{
-              background: {
-                  color: {
-                      value: "#000000",
+            particles: {
+                number: {
+                  value: 100,
+                  density: {
+                    enable: true,
+                    value_area: 800
+                  }
+                },
+                color: {
+                  value: '#fff'
+                },
+                shape: {
+                  type: 'circle',
+                  stroke: {
+                    width: 0,
+                    color: '#ff0000'
                   },
+                  polygon: {
+                    nb_sides: 5
+                  },
+                  image: {
+                    src: '',
+                    width: 100,
+                    height: 100
+                  }
+                },
+                opacity: {
+                  value: 1,
+                  random: false,
+                  anim: {
+                    enable: false,
+                    speed: 2,
+                    opacity_min: 0,
+                    sync: false
+                  }
+                },
+                size: {
+                  value: 1,
+                  random: false,
+                  anim: {
+                    enable: false,
+                    speed: 3,
+                    size_min: 0,
+                    sync: false
+                  }
+                },
+                line_linked: {
+                  enable: true,
+                  distance: 100,
+                  color: '#fff',
+                  opacity: 1,
+                  width: 1
+                },
+                move: {
+                  enable: true,
+                  speed: 2,
+                  direction: 'none',
+                  random: false,
+                  straight: false,
+                  out_mode: 'out',
+                  bounce: false,
+                  attract: {
+                    enable: false,
+                    rotateX: 3000,
+                    rotateY: 3000
+                  }
+                },
+                array: []
               },
-              fullScreen: {
-                zIndex: -1,
-                enable: true,
-              },
-              fpsLimit: 120,
               interactivity: {
-                  events: {
-                      onClick: {
-                          enable: false,
-                          mode: "push",
-                      },
-                      onHover: {
-                          enable: false,
-                          mode: "repulse",
-                      },
-                      resize: true,
+                detect_on: 'canvas',
+                events: {
+                  onhover: {
+                    enable: true,
+                    mode: 'grab'
                   },
-                  modes: {
-                      push: {
-                          quantity: 4,
-                      },
-                      repulse: {
-                          distance: 200,
-                          duration: 0.4,
-                      },
+                  onclick: {
+                    enable: true,
+                    mode: 'push'
                   },
+                  resize: true
+                },
+                modes: {
+                  grab:{
+                    distance: 100,
+                    line_linked:{
+                      opacity: 1
+                    }
+                  },
+                  bubble:{
+                    distance: 200,
+                    size: 80,
+                    duration: 0.4
+                  },
+                  repulse:{
+                    distance: 200,
+                    duration: 0.4
+                  },
+                  push:{
+                    particles_nb: 4
+                  },
+                  remove:{
+                    particles_nb: 2
+                  }
+                },
+                mouse:{}
               },
-              particles: {
-                  color: {
-                      value: "#ffffff",
-                  },
-                  links: {
-                      color: "#ffffff",
-                      distance: 150,
-                      enable: false,
-                      opacity: 0.005,
-                      width: 1,
-                  },
-                  collisions: {
-                      enable: false,
-                  },
-                  move: {
-                      directions: "none",
-                      enable: true,
-                      outModes: {
-                          default: "bounce",
-                      },
-                      random: false,
-                      speed: 4.5,
-                      straight: false,
-                  },
-                  number: {
-                      density: {
-                          enable: true,
-                          area: 390,
-                      },
-                      value: 140,
-                  },
-                  opacity: {
-                      value: 0.44,
-                  },
-                  shape: {
-                      type: 'star',
-                      star: {
-                        sides: 5,
-                        insert:2
-                      }
-                  },
-                  size: {
-                      value: 2,
-                  },
-              },
-              detectRetina: true,
-          }}
+              retina_detect: false
+            }}
       />
     )
 }
