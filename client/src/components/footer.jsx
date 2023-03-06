@@ -32,7 +32,7 @@ export default function Footer(){
                     <h1>Socials</h1>
                     <hr className="w-1/6 pb-3"/>
                     <div className="flex gap-4 text-2xl hover:cursor-pointer">
-                        <FaIcons.FaInstagram />
+                        <a href="https://www.instagram.com/edificio_cie.iitj/" target={'_blank'}><FaIcons.FaInstagram /></a>
                         <FaIcons.FaLinkedin />
                     </div>
                 </ul>

@@ -19,8 +19,8 @@ export default function EventSection(){
                 />
                 <HomeEventCard 
                 imgPath={"/logo_d.png"}
-                heading={"Pic Civilis"}
-                linkURL={"/pixivilis"}
+                heading={"P I X I V I L S"}
+                linkURL={"/pixivils"}
                 />
                 <HomeEventCard 
                 imgPath={"/logo_d.png"}

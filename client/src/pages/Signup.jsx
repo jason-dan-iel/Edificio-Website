@@ -4,7 +4,7 @@ import Partbg from "../components/particles";
 
 export default function SignupPage() {
   return (
-    <div className="flex flex-col justify-center items-center h-screen">
+    <div className="flex flex-col justify-center items-center h-screen z-999">
       <Header
         heading="Signup to create an account"
         paragraph="Already have an account? "
