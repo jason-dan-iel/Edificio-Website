@@ -7,8 +7,8 @@ export default function Hero() {
         <main id="hero" className="w-screen h-screen flex text-white mobile:flex-col pt-10">
             <section className="basis-1/2 flex flex-col justify-center items-center mobile:px-10">
                 <div className="mobile:w-8/10">
-                    <h1 className="text-7xl mobile:text-4xl pb-5">Edificio 23</h1>
-                    <p className="text-xl">Build Innovate Connect</p>
+                    <h1 className="text-7xl mobile:text-4xl pb-5">Edificio '23</h1>
+                    <p className="text-xl">Imagine Innovate Invent</p>
                 </div>
             </section>
 
