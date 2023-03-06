@@ -19,9 +19,9 @@ const App = () => {
   return (
     <div className=''>
       {/* <ParticlesConfig /> */}
-      <Partbg />
       <Router>
       <Navbar />
+      <Partbg />
         <Routes>
           <Route path = '/' element={<Home />} />
           <Route path = '/events' element={< Events/>} />
