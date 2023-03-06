@@ -67,9 +67,9 @@ export default function Partbg() {
                         directions: "none",
                         enable: true,
                         outModes: {
-                            default: "bounce",
+                            default: "fade",
                         },
-                        random: false,
+                        random: true,
                         speed: 3.5,
                         straight: false,
                     },
