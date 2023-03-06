@@ -15,7 +15,7 @@ export default function Navbar(){
                     <ul className="flex items-center">
                         <li><NavLink to="/" className="px-4" >Home</NavLink> </li>
                         <li><NavLink to="/events" className="px-4" >Events</NavLink> </li>
-                        <li><NavLink to="/ourteam" className="px-4" >Our Team</NavLink> </li>
+                        <li><NavLink to="/ourteam" className="px-4" >Team</NavLink> </li>
                         <li><NavLink to="/login" className="px-4" >Log In</NavLink> </li>
                         <li><NavLink to="/signup" className="px-4" >Register</NavLink> </li>
                     </ul>

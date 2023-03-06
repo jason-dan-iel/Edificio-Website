@@ -61,7 +61,7 @@ export default function Partbg() {
                         width: 1,
                     },
                     collisions: {
-                        enable: true,
+                        enable: false,
                     },
                     move: {
                         directions: "none",
@@ -70,7 +70,7 @@ export default function Partbg() {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 6,
+                        speed: 2.895,
                         straight: false,
                     },
                     number: {

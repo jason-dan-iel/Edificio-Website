@@ -7,9 +7,9 @@ export default function TeamCard({
     Designation
 }) {
   return (
-    <div className="text-center text-gray-500 dark:text-gray-400">
+    <div className="text-center text-gray-500">
       <img
-        className="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
+        className="mx-auto mb-4 w-36 h-36 rounded-full object-cover "
         src={imgPath}
         alt=""
       />
