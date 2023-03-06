@@ -9,7 +9,7 @@ export default function TeamCard({
   return (
     <div className="text-center text-gray-500">
       <img
-        className="mx-auto mb-4 w-36 h-36 rounded-full object-cover "
+        className="mx-auto mb-4 w-52 h-52 rounded-full object-cover "
         src={imgPath}
         alt=""
       />

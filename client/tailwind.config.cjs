@@ -11,6 +11,9 @@ module.exports = {
       },
       screens: {
         mobile : {'max': '640px'},
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--gradient-color-stops))',
       }
     },
   },

@@ -18,7 +18,7 @@ import ScrolltoTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
-    <div className="font-martianmono">
+    <div className="font-martianmono" id="back_color">
       <Router>
         <ScrolltoTop />
 
@@ -34,7 +34,7 @@ const App = () => {
 
           {/* Events Routing */}
           <Route path="/eureka" element={<Eureka />} />
-          <Route path="/pixivilis" element={<Pixivillis />} />
+          <Route path="/pixivils" element={<Pixivillis />} />
           <Route path="/symposium" element={<Sympossium />} />
           <Route path="/cadecetto" element={<Cadacetto />} />
           <Route path="/civiq" element={<Civiq />} />

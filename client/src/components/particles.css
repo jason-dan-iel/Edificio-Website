@@ -186,7 +186,7 @@
   #stars1:after {
     content: "";
     position: absolute;
-    top: 2000px;
+    top : 1200px;
     width: 1px;
     height: 1px;
     background: transparent;
@@ -430,7 +430,7 @@
   #stars2:after {
     content: "";
     position: absolute;
-    top: 2000px;
+    top : 1200px;
     width: 2px;
     height: 2px;
     background: transparent;
@@ -523,7 +523,7 @@
   #stars3:after {
     content: "";
     position: absolute;
-    top: 2000px;
+    top : 1200px;
     width: 3px;
     height: 3px;
     background: transparent;
@@ -566,7 +566,7 @@
   
   canvas {
     display: block;
-    vertical-align: bottom;
+    /* vertical-align: bottom; */
     position: fixed;
     height: 100%;
   }
