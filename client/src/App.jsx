@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import OurTeam from "./pages/OurTeam";
 import LoginPage from "./pages/Login";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar";
 import SignupPage from "./pages/Signup";
 import Events from "./pages/Events";
 import Eureka from "./Events/eureka";
