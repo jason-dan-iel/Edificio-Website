@@ -4,7 +4,7 @@ import { TagCloud } from "@frank-mayer/react-tag-cloud";
 
 export default function Hero() {
     return (
-        <main className="w-screen h-screen flex text-white bg-black">
+        <main className="w-screen h-screen flex text-white bg-black mobile:flex-col">
             <section className="basis-1/2 flex flex-col justify-center items-center">
                 <h1 className="text-7xl">Edificio 23</h1>
                 <p>Build Innovate Connect</p>

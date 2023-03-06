@@ -7,6 +7,9 @@ module.exports = {
     extend: {
       fontFamily: {
         'poppins' : ['Poppins', 'sans-serif']
+      },
+      screens: {
+        mobile : {'max': '640px'},
       }
     },
   },
