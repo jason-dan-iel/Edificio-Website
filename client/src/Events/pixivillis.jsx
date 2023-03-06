@@ -3,8 +3,8 @@ export default function Pixivillis() {
     <section>
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
-          <h2 className="mt-8 mb-2 text-4xl tracking-tight font-extrabold text-white text-center">
-            Pic Civils
+          <h2 className="mt-8 mb-2 text-4xl tracking-tight font-extrabold text-white text-center uppercase">
+            p i x i v i l i s
           </h2>
         </div>
         <div className=" bg-white border border-gray-200 rounded-lg shadow text-lg ">

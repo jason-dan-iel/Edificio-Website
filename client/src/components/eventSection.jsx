@@ -20,7 +20,7 @@ export default function EventSection(){
                 <HomeEventCard 
                 imgPath={"/logo_d.png"}
                 heading={"Pic Civilis"}
-                linkURL={"/piccivils"}
+                linkURL={"/pixivilis"}
                 />
                 <HomeEventCard 
                 imgPath={"/logo_d.png"}

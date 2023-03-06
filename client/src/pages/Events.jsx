@@ -37,9 +37,9 @@ export default function Events() {
           />
           <EventCard
             imgPath={"/logo_d.png"}
-            heading="PIC CIVILS"
+            heading="P I X I V I L I S"
             content={"Problem-Solving Competition for Identifying and Solving Civil and Infrastructure Engineering Issues"}
-            linkURL="/piccivils"
+            linkURL="/pixivilis"
           />
           <EventCard
             imgPath={"/logo_d.png"}
