@@ -4,7 +4,7 @@ import * as FaIcons from "react-icons/fa";
 export default function Footer(){
     return (
         <main className="bg-[#133661]  text-white">
-            <footer className="flex justify-between max-w-6xl m-auto footer py-10 mobile:flex-col mobile:px-10">
+            <footer className="flex justify-between max-w-7xl m-auto footer py-10 mobile:flex-col mobile:px-10">
                 <ul className="basis-1/3 mb-5">
                     <h1>Edificio</h1>
                     <hr className="w-1/6 pb-3"/>

@@ -41,7 +41,7 @@ export default function OurTeam() {
             Designation={"Resources"}
           />
           <TeamCard
-            imgPath={"/team_photos/kunal_webd.jpeg"}
+            imgPath={"https://i.postimg.cc/x14M7xvC/Whats-App-Image-2023-03-06-at-10-05-01.jpg"}
             instaLink={"#"}
             Name={"Kunal Tiwari"}
             Designation={"Web Development"}
