@@ -5,7 +5,7 @@ export default function EventCard({ imgPath, heading, content, linkURL }) {
   return (
     <div className="max-w-sm bg-orange-200 border border-gray-200 rounded-lg shadow">
       <img
-        className="mx-auto mb-4 w-36 h-36 rounded-full"
+        className="mx-auto mb-4 w-36 h-36 rounded-full "
         src={imgPath}
         alt=""
       />

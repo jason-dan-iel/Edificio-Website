@@ -4,7 +4,7 @@ import EventCard from "../components/eventsCard";
 export default function Events() {
   return (
     <section>
-      <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+      <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 ">
         <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
             <h2 className="mt-8 mb-2 text-4xl tracking-tight font-extrabold text-white">Events</h2>
 
@@ -13,32 +13,32 @@ export default function Events() {
           <EventCard
             imgPath={"/logo_d.png"}
             heading="BRIDGE MAKING"
-            content={"Loremadf a fa fa df af "}
+            content={"Testing Engineering Skills and Encouraging Creativity"}
             linkURL="/bridgemaking"
           />
           <EventCard
             imgPath={"/logo_d.png"}
             heading="CIVIQ"
-            content={"Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind"}
+            content={"Test your knowledge and learn more about civil engineering"}
             linkURL="/civiq"
           />
 
           <EventCard
             imgPath={"/logo_d.png"}
             heading="CADACETTO"
-            content={"Loremadf a fa fa df af "}
-            linkURL="/cadacetto"
+            content={"Online Event Testing Creativity and Drafting Skills using CAD Platforms"}
+            linkURL="/cadecetto"
           />
           <EventCard
             imgPath={"/logo_d.png"}
             heading="EUREKA"
-            content={"Loremadf a fa fa df af "}
+            content={"Technical Poster Presentation Competition Showcasing Innovations in Civil and Infrastructure Engineering"}
             linkURL="/eureka"
           />
           <EventCard
             imgPath={"/logo_d.png"}
             heading="PIC CIVILS"
-            content={"Loremadf a fa fa df af "}
+            content={"Problem-Solving Competition for Identifying and Solving Civil and Infrastructure Engineering Issues"}
             linkURL="/piccivils"
           />
           <EventCard

@@ -61,7 +61,7 @@ export default function Partbg() {
                         width: 1,
                     },
                     collisions: {
-                        enable: true,
+                        enable: false,
                     },
                     move: {
                         directions: "none",
@@ -70,7 +70,7 @@ export default function Partbg() {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 3.5,
+                        speed: 2.895,
                         straight: false,
                     },
                     number: {
@@ -90,7 +90,7 @@ export default function Partbg() {
                         value: { min: 1, max: 5 },
                     },
                 },
-                detectRetina: true,
+                detectRetina: true,            
             }}
         />
     );
