@@ -28,9 +28,7 @@ export default function BridgeMaking() {
                   number of popsicle sticks possible that can still hold a
                   certain amount of weight. We can make sure the competition is
                   fair and safe for everyone by following the rules and
-                  guidelines. We hope that this competition will encourage
-                  students to go into engineering and help improve the built
-                  environment
+                  guidelines.
                 </p>
               </li>
               <li>
