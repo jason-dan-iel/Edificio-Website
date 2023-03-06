@@ -67,10 +67,10 @@ export default function Partbg() {
                         directions: "none",
                         enable: true,
                         outModes: {
-                            default: "fade",
+                            default: "bounce",
                         },
-                        random: true,
-                        speed: 3.5,
+                        random: false,
+                        speed: 6,
                         straight: false,
                     },
                     number: {
@@ -90,7 +90,7 @@ export default function Partbg() {
                         value: { min: 1, max: 5 },
                     },
                 },
-                detectRetina: true,
+                detectRetina: true,            
             }}
         />
     );

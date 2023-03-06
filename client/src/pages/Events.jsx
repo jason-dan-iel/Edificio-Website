@@ -13,7 +13,7 @@ export default function Events() {
           <EventCard
             imgPath={"/logo_d.png"}
             heading="BRIDGE MAKING"
-            content={"Loremadf a fa fa df af "}
+            content={"Testing Engineering Skills and Encouraging Creativity"}
             linkURL="/bridgemaking"
           />
           <EventCard
@@ -26,13 +26,13 @@ export default function Events() {
           <EventCard
             imgPath={"/logo_d.png"}
             heading="CADACETTO"
-            content={"Loremadf a fa fa df af "}
-            linkURL="/cadacetto"
+            content={"Online Event Testing Creativity and Drafting Skills using CAD Platforms"}
+            linkURL="/cadecetto"
           />
           <EventCard
             imgPath={"/logo_d.png"}
             heading="EUREKA"
-            content={"Loremadf a fa fa df af "}
+            content={"Technical Poster Presentation Competition Showcasing Innovations in Civil and Infrastructure Engineering"}
             linkURL="/eureka"
           />
           <EventCard
