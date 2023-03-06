@@ -13,7 +13,7 @@ export default function Civiq(){
                 src=""
                 alt=""
               />
-              <div className="p-5">
+              <div className="p-10">
                 <ul>
                   <li>
                     <h5 className="mb-2 text-2xl font-bold tracking-tight uppercase underline">
@@ -37,7 +37,7 @@ export default function Civiq(){
                         <li>First Round (All teams can participate)
                         </li>
                             <ol className="list-disc px-5">
-                                <li>Civil 101 (to test the fact based civil engineering knowledge and few very easy conceptual questions)</li>
+                                <li>Civil 101: To test the fact based civil engineering knowledge and a few conceptual questions</li>
                                 <li>Crusade the Concepts (brainstorming questions covering a range of topics within civil engineering, such as structural analysis, geotechnical engineering, transportation engineering, water resources engineering, and construction management)</li>
                             </ol>
                         <li>Final Round

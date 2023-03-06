@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function EventCard({ imgPath, heading, content, linkURL }) {
+export default function HomeEventCard({ imgPath, heading, linkURL }) {
   return (
-    <div className="max-w-sm bg-orange-200 border border-gray-200 rounded-lg shadow">
+    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
       <img
-        className="mx-auto mb-4 w-36 h-36 rounded-full"
+        className="mx-auto mb-4 w-36 h-36 rounded-full border border-black mt-2"
         src={imgPath}
         alt=""
       />
@@ -16,13 +16,10 @@ export default function EventCard({ imgPath, heading, content, linkURL }) {
               {heading}
             </h5>
           </li>
-          <li>
-            <p className="mb-3 font-normal text-gray-700">{content}</p>
-          </li>
-          <li>
+          <li className="">
             <Link
               to={linkURL}
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 "
             >
               Read more
               <svg

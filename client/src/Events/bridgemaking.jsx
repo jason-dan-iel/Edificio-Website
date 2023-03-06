@@ -13,7 +13,7 @@ export default function BridgeMaking(){
                 src=""
                 alt=""
               />
-              <div className="p-5">
+              <div className="p-10">
                 <ul>
                   <li>
                     <h5 className="mb-2 text-2xl font-bold tracking-tight uppercase underline">

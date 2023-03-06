@@ -65,12 +65,6 @@ export default function OurTeam() {
             Designation={"Design and Content"}
           />
           <TeamCard
-            imgPath={"/team_photos/karina_events.jpeg"}
-            instaLink={"https://www.instagram.com/karinachoudhary75/"}
-            Name={"Karina Choudhary"}
-            Designation={"Events"}
-          />
-          <TeamCard
             imgPath={"/team_photos/rifa_events.jpeg"}
             instaLink={"https://www.instagram.com/rifa_bint_e_haider/"}
             Name={"Rifa Khan"}
