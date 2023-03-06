@@ -11,17 +11,15 @@ import Eureka from './Events/eureka';
 import Pixivillis from './Events/pixivillis';
 import Sympossium from './Events/sympossium';
 import Cadacetto from './Events/cadacetto';
-import AI4CI from './Events/ai4ci';
 import Civiq from './Events/civiq';
 import BridgeMaking from './Events/bridgemaking';
-import QuizMania from './Events/quizmania';
 import Partbg from './components/particles';
 
 const App = () => {
   return (
     <div className=''>
-      <ParticlesConfig />
-      {/* <Partbg /> */}
+      {/* <ParticlesConfig /> */}
+      <Partbg />
       <Router>
       <Navbar />
         <Routes>
@@ -36,10 +34,8 @@ const App = () => {
           <Route path = '/piccivils' element={<Pixivillis/>} />
           <Route path = '/symposium' element={<Sympossium/>} />
           <Route path = '/cadacetto' element={<Cadacetto/>} />
-          <Route path = '/ai4ci' element={< AI4CI/>} />
           <Route path = '/civiq' element={<Civiq/>} />
           <Route path = '/bridgemaking' element={<BridgeMaking/>} />
-          <Route path = '/quizmania' element={<QuizMania/>} />
         </Routes>
       </Router>
 

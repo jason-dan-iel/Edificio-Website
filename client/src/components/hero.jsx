@@ -7,7 +7,7 @@ export default function Hero() {
         <main className="w-screen h-screen flex text-white bg-black">
             <section className="basis-1/2 flex flex-col justify-center items-center">
                 <h1 className="text-7xl">Edificio 23</h1>
-                <p>Build Innovate Connec</p>
+                <p>Build Innovate Connect</p>
             </section>
 
             <section className="basis-1/2 text-white flex justify-center items-center">
