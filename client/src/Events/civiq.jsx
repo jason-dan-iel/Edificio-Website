@@ -33,18 +33,23 @@ export default function Civiq(){
                   <ol className="list-disc px-10">
                     <li>Maximum team size can be of 4 members</li>
                     <li>QUIZ contains in total 2 rounds</li>
-                    <ol className="list-decimal px-5">
-                        <li>First Round (All teams can participate)
+                    <ol className="list-disc px-5 italic font-semibold">
+                      <li> CIVIL101 </li>
+                      <li>Crusade The Concepts</li>
+                    </ol>
+                    <ol className="mt-5 list-decimal">
+                        <li className="">First Round (All teams can participate)
                         </li>
                             <ol className="list-disc px-5">
                                 <li>Civil 101: To test the fact based civil engineering knowledge and a few conceptual questions</li>
-                                <li>Crusade the Concepts (brainstorming questions covering a range of topics within civil engineering, such as structural analysis, geotechnical engineering, transportation engineering, water resources engineering, and construction management)</li>
+                                <li>The final score of round 1 will serve as the basis for the entry in round 2</li>
                             </ol>
                         <li>Final Round
                         </li>
                             <ol className="list-disc px-5">
                                 <li>Only the top five teams from round one will be eligible for this round</li>
-                                <li>Few tricky questions</li>
+                                <li>This will also be an objective quiz consisting of multiple correct questions</li>
+                                <li>Crusade the Concepts (brainstorming questions covering a range of topics within civil engineering, such as structural analysis, geotechnical engineering, transportation engineering, water resources engineering, and construction management)</li>
                             </ol>
                     </ol>
                     <li>First round total score will be calculated on the basis of total scores in Civil 101 and Crusade the Concepts</li>

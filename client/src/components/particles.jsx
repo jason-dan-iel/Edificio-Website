@@ -69,7 +69,7 @@ export default function Partbg() {
                         outModes: {
                             default: "bounce",
                         },
-                        random: true,
+                        random: false,
                         speed: 3.5,
                         straight: false,
                     },
