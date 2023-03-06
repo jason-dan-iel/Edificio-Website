@@ -12,7 +12,7 @@ export default function Navbar(){
                     <img src="/logo_l.png" alt="" className="h-16 w-16"/>
                 </section>
                 <section>
-                    <ul className="flex items-center">
+                    <ul className="flex items-center mobile:hidden">
                         <li><NavLink to="/" className="px-4" >Home</NavLink> </li>
                         <li><NavLink to="/events" className="px-4" >Events</NavLink> </li>
                         <li><NavLink to="/ourteam" className="px-4" >Team</NavLink> </li>
