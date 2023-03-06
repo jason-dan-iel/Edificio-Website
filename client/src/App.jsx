@@ -14,12 +14,14 @@ import Cadacetto from "./Events/cadacetto";
 import Civiq from "./Events/civiq";
 import BridgeMaking from "./Events/bridgemaking";
 import Partbg from "./components/particles";
+import ScrolltoTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
     <div className="font-martianmono">
       {/* <ParticlesConfig /> */}
       <Router >
+        <ScrolltoTop />
 
           <Navbar />
           <Partbg />
@@ -38,6 +40,7 @@ const App = () => {
             <Route path="/civiq" element={<Civiq />} />
             <Route path="/bridgemaking" element={<BridgeMaking />} />
           </Routes>
+        {/* </ScrolltoTop> */}
       </Router>
     </div>
   );
