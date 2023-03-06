@@ -22,16 +22,12 @@ export default function Hero() {
                     onClickOptions={{ passive: true }}
                 >
                     {[
-                        "VSCode",
-                        "TypeScript",
-                        "React",
-                        "Preact",
-                        "Parcel",
-                        "Jest",
-                        "Next",
-                        "ESLint",
-                        "Framer Motion",
-                        "Three.js",
+                        "Bridge Making",
+                        "Symposium",
+                        "P I X I V I L S",
+                        "CiviQ",
+                        "Eureka",
+                        "CADecetto",
                     ]}
                 </TagCloud>
             </section>

@@ -6,8 +6,8 @@ export default function Navbar(){
         console.log("hello world")
     }
     return(
-        <nav className="z-999 fixed navbar w-screen px-20 text-2xl text-white bg-[#133661] ">
-            <ul className="flex justify-between items-center p-2">
+        <nav className="z-999 fixed navbar w-screen px-20 text-xl text-white bg-[#133661] ">
+            <ul className="flex justify-between items-center p-1">
                 <section>
                 <NavLink to="/" className="" ><img src="/logo_l.png" alt="" className="h-16 w-16"/></NavLink>
                 </section>
