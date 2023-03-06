@@ -1,10 +1,10 @@
 import React from "react";
 import ParticlesConfig from "./components/particleConfig";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/home";
+import Home from "./pages/Home";
 import OurTeam from "./pages/OurTeam";
 import LoginPage from "./pages/Login";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar";
 import SignupPage from "./pages/Signup";
 import Events from "./pages/Events";
 import Eureka from "./Events/eureka";
@@ -14,12 +14,14 @@ import Cadacetto from "./Events/cadacetto";
 import Civiq from "./Events/civiq";
 import BridgeMaking from "./Events/bridgemaking";
 import Partbg from "./components/particles";
+import ScrolltoTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
     <div className="font-martianmono">
       {/* <ParticlesConfig /> */}
       <Router >
+        <ScrolltoTop />
 
           <Navbar />
           <Partbg />
@@ -38,6 +40,7 @@ const App = () => {
             <Route path="/civiq" element={<Civiq />} />
             <Route path="/bridgemaking" element={<BridgeMaking />} />
           </Routes>
+        {/* </ScrolltoTop> */}
       </Router>
     </div>
   );
