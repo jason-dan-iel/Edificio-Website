@@ -5,9 +5,7 @@ import Hero from "../components/hero";
 
 export default function HomePage(){
     return (
-        <main>
-
-            {/* <ParticlesConfig /> */}
+        <main >
             <Hero />
             <AboutUs />
             <Footer />

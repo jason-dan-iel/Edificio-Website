@@ -10,40 +10,40 @@ export default function Events() {
             <h2 className="mt-8 mb-2 text-4xl tracking-tight font-extrabold text-white">Events</h2>
 
         </div>
-        <div className="relative grid gap-8 lg:gap-16 sm:grid-cols-2 mg:grid-cols-3 lg:grid-cols-3">
+        <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 mg:grid-cols-3 lg:grid-cols-3">
           <EventCard
-            imgPath={"/logo_d.png"}
+            imgPath={"/events/bridge.png"}
             heading="BRIDGE MAKING"
             content={"Testing Engineering Skills and Encouraging Creativity"}
             linkURL="/bridgemaking"
           />
           <EventCard
-            imgPath={"/logo_d.png"}
+            imgPath={"/events/quiz.png"}
             heading="CIVIQ"
             content={"Test your knowledge and learn more about civil engineering"}
             linkURL="/civiq"
           />
 
           <EventCard
-            imgPath={"/logo_d.png"}
+            imgPath={"/events/cad.png"}
             heading="CADECETTO"
             content={"Online Event Testing Creativity and Drafting Skills using CAD Platforms"}
             linkURL="/cadecetto"
           />
           <EventCard
-            imgPath={"/logo_d.png"}
+            imgPath={"/events/poster.png"}
             heading="EUREKA"
             content={"Technical Poster Presentation Competition Showcasing Innovations in Civil and Infrastructure Engineering"}
             linkURL="/eureka"
           />
           <EventCard
-            imgPath={"/logo_d.png"}
+            imgPath={"/events/pixivils.png"}
             heading="P I X I V I L S"
             content={"Problem-Solving Competition for Identifying and Solving Civil and Infrastructure Engineering Issues"}
             linkURL="/pixivils"
           />
           <EventCard
-            imgPath={"/logo_d.png"}
+            imgPath={"/events/symp.png"}
             heading="SYMPOSIUM"
             content={"Panel Discussion and Guest Talks"}
             linkURL="/symposium"

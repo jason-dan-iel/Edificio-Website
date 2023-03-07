@@ -1,5 +1,4 @@
 import React from "react";
-import ParticlesConfig from "./components/particleConfig";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import OurTeam from "./pages/OurTeam";
@@ -17,14 +16,14 @@ import Partbg from "./components/particles";
 import ScrolltoTop from "./components/ScrollToTop";
 import Profiles from "./components/profiles";
 
+
 const App = () => {
   return (
     <div className="font-martianmono" id="back_color">
       <Router>
+        <Navbar />
         <ScrolltoTop />
 
-        <Navbar />
-        {/* <ParticlesConfig/> */}
         <Partbg />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -33,6 +32,7 @@ const App = () => {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/profile" element={<Profiles />} />
+
 
           {/* Events Routing */}
           <Route path="/eureka" element={<Eureka />} />

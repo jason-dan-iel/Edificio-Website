@@ -9,8 +9,8 @@ export default function BridgeMaking() {
         </div>
         <div className=" bg-white border border-gray-200 rounded-lg shadow text-lg ">
           <img
-            className="mx-auto mb-4 w-full h-36 rounded-full"
-            src=""
+            className="mx-auto mb-4 w-[40rem] h-96 mt-10"
+            src="/events/bridge.png"
             alt=""
           />
           <div className="p-10">
