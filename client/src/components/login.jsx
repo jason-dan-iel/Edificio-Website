@@ -4,6 +4,7 @@ import FormAction from "./formaction";
 import FormExtra from "./formextra";
 import Input from "./input";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const fields = loginFields;
 let fieldsState = {};
@@ -11,6 +12,8 @@ fields.forEach((field) => (fieldsState[field.id] = ""));
 
 export default function Login() {
   const [loginState, setLoginState] = useState(fieldsState);
+
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setLoginState({ ...loginState, [e.target.id]: e.target.value });
@@ -32,16 +35,14 @@ export default function Login() {
     axios(configuration)
       .then((result) => {
         alert("logged in successfully");
-        setLoginState(true);
+        localStorage.setItem("Token", result.data.token);
+        navigate("/");
+        location.reload();
+
       })
       .catch((error) => {
         alert(error.error);
       });
-      {loginState ? (
-        <p className="text-success">You Are Logged in Successfully</p>
-      ) : (
-        <p className="text-danger">You Are Not Logged in</p>
-      )}
   };
 
   return (
