@@ -6,9 +6,12 @@ const User = require('./files/userModel');
 const bcrypt = require('bcrypt');
 const jwt = require("jsonwebtoken");
 const auth = require("./auth");
+const cors = require("cors");
+
 
 dbConnect();
 
+app.use(cors());
 // body parser configuration
 app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({ extended: true }));
@@ -26,11 +29,11 @@ app.post("/register", (request, response) => {
       .then((hashedPassword) => {
         // create a new user instance and collect the data
         const user = new User({
-          email: request.body.email,
-          password: hashedPassword,
-          username: request.body.username,
-          college : request.body.college,
-          name : request.body.name
+          "email": request.body.email,
+          "password": hashedPassword,
+          "username": request.body.username,
+          "college" : request.body.college,
+          "name" : request.body.name
         });
   
         // save the new user
