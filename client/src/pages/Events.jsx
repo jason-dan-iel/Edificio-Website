@@ -26,7 +26,7 @@ export default function Events() {
 
           <EventCard
             imgPath={"/logo_d.png"}
-            heading="CADACETTO"
+            heading="CADECETTO"
             content={"Online Event Testing Creativity and Drafting Skills using CAD Platforms"}
             linkURL="/cadecetto"
           />

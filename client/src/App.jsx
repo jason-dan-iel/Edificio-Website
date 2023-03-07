@@ -23,7 +23,7 @@ const App = () => {
         <ScrolltoTop />
 
         <Navbar />
-        {/* <ParticlesConfig /> */}
+        {/* <ParticlesConfig/> */}
         <Partbg />
         <Routes>
           <Route path="/" element={<Home />} />
