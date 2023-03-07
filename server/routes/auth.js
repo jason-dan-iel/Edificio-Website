@@ -50,16 +50,16 @@ router.post("/register", async (req, res) => {
 router.post("/login", async (req, res) => {
   // validation
   const { error } = loginValidation(req.body);
-  if (error) return res.status(400).json({ error: error.details[0].message });
+  if (error) return res.status(400).json({ "error": error.details[0].message });
 
   // check if email doesn't exist
   const user = await User.findOne({ email: req.body.email });
-  if (!user) return res.status(400).json({ error: "Email Not Found" });
+  if (!user) return res.status(400).json({ "error": "Email Not Found" });
 
   //   check if password is correct
   const checkPass = await bcrypt.compare(req.body.password, user.password);
   if (!checkPass)
-    return res.status(400).json({ error: "Password is incorrect" });
+    return res.status(400).json({ "error": "Password is incorrect" });
 
   res.send("Logged in");
 
