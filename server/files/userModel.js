@@ -25,16 +25,6 @@ const UserSchema = mongoose.Schema({
         type: String,
         required: true
     },
-
-    teamCaptain: {
-        type: Boolean,
-        default: false,
-    },
-
-    teamId: {
-        type: String,
-        default: null
-    }
 })
 
 module.exports = mongoose.model('User', UserSchema);
