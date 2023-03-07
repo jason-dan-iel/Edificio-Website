@@ -11,17 +11,17 @@ const {
 router.post("/register", async (req, res) => {
   // validation
   const { error } = registrationValidation(req.body);
-  if (error) return res.status(400).json({ error: error.details[0].message });
+  if (error) return res.status(400).json({ "error": error.details[0].message });
 
   //   check if already exists
   const usernameExists = await User.findOne({ username: req.body.username });
   if (usernameExists)
     return res.status(400).json({
-      error: "Username Already Exists",
+      "error": "Username Already Exists",
     });
   const emailExists = await User.findOne({ email: req.body.email });
   if (emailExists)
-    return res.status(400).send({ error: "Email Already Exists" });
+    return res.status(400).send({ "error": "Email Already Exists" });
 
   //   hashing password
   const salt = await bcrypt.genSalt(10);
@@ -40,7 +40,9 @@ router.post("/register", async (req, res) => {
     const saveduser = await user.save();
     res.status(200).json({ success: "Registered Successfully" });
   } catch (error) {
-    res.status(400).send(err);
+    res.status(400).json({
+        "error" : "Not Registered"
+    });
   }
 });
 
