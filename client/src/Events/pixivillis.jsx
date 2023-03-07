@@ -38,10 +38,6 @@ export default function Pixivillis() {
                 <li>Title</li>
                 <li>Names of the applicant/ applicants (Not more than 3)</li>
                 <li>
-                  The bridge must be constructed using only popsicle sticks and
-                  white glue
-                </li>
-                <li>
                   The description of the problem along with the study area and
                   the relevant picture(s) in not more than 100 words
                 </li>

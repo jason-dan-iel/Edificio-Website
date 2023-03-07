@@ -1,10 +1,11 @@
 import React from "react";
 import EventCard from "../components/eventsCard";
+import Footer from "../components/footer";
 
 export default function Events() {
   return (
     <section>
-      <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 ">
+      <div className="z-999 py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6 ">
         <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
             <h2 className="mt-8 mb-2 text-4xl tracking-tight font-extrabold text-white">Events</h2>
 
@@ -25,7 +26,7 @@ export default function Events() {
 
           <EventCard
             imgPath={"/logo_d.png"}
-            heading="CADACETTO"
+            heading="CADECETTO"
             content={"Online Event Testing Creativity and Drafting Skills using CAD Platforms"}
             linkURL="/cadecetto"
           />
@@ -37,9 +38,9 @@ export default function Events() {
           />
           <EventCard
             imgPath={"/logo_d.png"}
-            heading="P I X I V I L I S"
+            heading="P I X I V I L S"
             content={"Problem-Solving Competition for Identifying and Solving Civil and Infrastructure Engineering Issues"}
-            linkURL="/pixivilis"
+            linkURL="/pixivils"
           />
           <EventCard
             imgPath={"/logo_d.png"}
@@ -49,6 +50,7 @@ export default function Events() {
           />
         </div>
       </div>
+      <Footer />
     </section>
   );
 }

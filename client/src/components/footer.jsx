@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 export default function Footer(){
     return (
-        <main className="bg-[#133661]  text-white">
+        <main className="bg-[#133661]  text-white text-sm">
             <footer className="flex justify-between max-w-7xl m-auto footer py-10 mobile:flex-col mobile:px-10">
-                <ul className="basis-1/3 mb-5">
+                <ul className="basis-1/3 mb-5 mx-2">
                     <a href="https://www.edificioiitj.org.in/" target={"_blank"}>Edificio</a>
                     <hr className="w-1/6 pb-3"/>
                     <li>Indian Institute of Technology Jodhpur NH 65 Nagaur Road Karwar 342030, Jodhpur District</li>
@@ -32,7 +32,7 @@ export default function Footer(){
                     <h1>Socials</h1>
                     <hr className="w-1/6 pb-3"/>
                     <div className="flex gap-4 text-2xl hover:cursor-pointer">
-                        <FaIcons.FaInstagram />
+                        <a href="https://www.instagram.com/edificio_cie.iitj/" target={'_blank'}><FaIcons.FaInstagram /></a>
                         <FaIcons.FaLinkedin />
                     </div>
                 </ul>

@@ -15,13 +15,14 @@ import BridgeMaking from "./Events/bridgemaking";
 import Partbg from "./components/particles";
 import ScrolltoTop from "./components/ScrollToTop";
 
+
 const App = () => {
   return (
-    <div className="font-martianmono">
+    <div className="font-martianmono" id="back_color">
       <Router>
+        <Navbar />
         <ScrolltoTop />
 
-        <Navbar />
         <Partbg />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -30,9 +31,10 @@ const App = () => {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
 
+
           {/* Events Routing */}
           <Route path="/eureka" element={<Eureka />} />
-          <Route path="/pixivilis" element={<Pixivillis />} />
+          <Route path="/pixivils" element={<Pixivillis />} />
           <Route path="/symposium" element={<Sympossium />} />
           <Route path="/cadecetto" element={<Cadacetto />} />
           <Route path="/civiq" element={<Civiq />} />
