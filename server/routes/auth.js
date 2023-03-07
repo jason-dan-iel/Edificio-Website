@@ -11,13 +11,17 @@ const {
 router.post("/register", async (req, res) => {
   // validation
   const { error } = registrationValidation(req.body);
-  if (error) return res.status(400).json({error:error.details[0].message});
+  if (error) return res.status(400).json({ error: error.details[0].message });
 
   //   check if already exists
   const usernameExists = await User.findOne({ username: req.body.username });
-  if (usernameExists) return res.status(400).json({error:"Username Already Exists"});
+  if (usernameExists)
+    return res.status(400).json({
+      error: "Username Already Exists",
+    });
   const emailExists = await User.findOne({ email: req.body.email });
-  if (emailExists) return res.status(400).send({error:"Email Already Exists"});
+  if (emailExists)
+    return res.status(400).send({ error: "Email Already Exists" });
 
   //   hashing password
   const salt = await bcrypt.genSalt(10);
@@ -34,7 +38,7 @@ router.post("/register", async (req, res) => {
   // save
   try {
     const saveduser = await user.save();
-    res.send({ user: user._id });
+    res.status(200).json({ success: "Registered Successfully" });
   } catch (error) {
     res.status(400).send(err);
   }
@@ -44,15 +48,16 @@ router.post("/register", async (req, res) => {
 router.post("/login", async (req, res) => {
   // validation
   const { error } = loginValidation(req.body);
-  if (error) return res.status(400).json({error:error.details[0].message});
+  if (error) return res.status(400).json({ error: error.details[0].message });
 
   // check if email doesn't exist
   const user = await User.findOne({ email: req.body.email });
-  if (!user) return res.status(400).json({error:"Email Not Found"});
+  if (!user) return res.status(400).json({ error: "Email Not Found" });
 
   //   check if password is correct
   const checkPass = await bcrypt.compare(req.body.password, user.password);
-  if (!checkPass) return res.status(400).json({error:"Password is incorrect"});
+  if (!checkPass)
+    return res.status(400).json({ error: "Password is incorrect" });
 
   res.send("Logged in");
 
