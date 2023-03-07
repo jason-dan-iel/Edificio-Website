@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 require('dotenv').config()
 
 async function dbConnect() {
+    mongoose.set('strictQuery', false);
     mongoose
     .connect(
         process.env.DB_URL,
@@ -13,7 +14,6 @@ async function dbConnect() {
       }
     )
     .then(() => {
-        mongoose.set('strictQuery', true);
         console.log("Successfully connected to MongoDB Atlas!");
       })
       .catch((error) => {
