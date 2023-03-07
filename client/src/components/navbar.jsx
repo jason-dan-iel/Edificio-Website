@@ -1,5 +1,5 @@
 import React from "react";
-import HamburgerMenu from 'react-hamburger-menu';
+import { fallDown as Menu } from 'react-burger-menu'
 
 
 export default function Navbar() {
