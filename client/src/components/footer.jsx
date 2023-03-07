@@ -9,7 +9,7 @@ export default function Footer(){
                 <ul className="basis-1/3 mb-5 mx-2">
                     <a href="https://www.edificioiitj.org.in/" target={"_blank"}>Edificio</a>
                     <hr className="w-1/6 pb-3"/>
-                    <li>Indian Institute of Technology Jodhpur NH 65 Nagaur Road Karwar 342030, Jodhpur District</li>
+                    <li>Indian Institute of Technology Jodhpur NH 62 Nagaur Road Karwar 342030, Jodhpur District</li>
                     <li>Phone Number: +91 7340293578</li>
                     <li>Email: edificio_cie@iitj.ac.in</li>
                 </ul>
