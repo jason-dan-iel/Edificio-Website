@@ -22,15 +22,7 @@ export default function Sympossium(){
               </li>
               <li>
                 <p className="mb-1 font-normal text-gray-700 text-lg">
-                
-                </p>
-              </li>
-              <li>
-                <h5 className="my-2 text-2xl font-bold tracking-tight uppercase underline">
-                  General guidelines:
-                </h5>
-                <p className="font-semibold tracking-tight">
-                  The document must include the following details:-
+                Panel discussion and guest talk for helping ideas making and learn something panel these activities can help to foster idea creation and promote learning by providing opportunities
                 </p>
               </li>
             </ul>

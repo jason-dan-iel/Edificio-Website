@@ -10,7 +10,7 @@ export default function Events() {
             <h2 className="mt-8 mb-2 text-4xl tracking-tight font-extrabold text-white">Events</h2>
 
         </div>
-        <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 mg:grid-cols-3 lg:grid-cols-3">
+        <div className="relative grid gap-8 lg:gap-16 sm:grid-cols-2 mg:grid-cols-3 lg:grid-cols-3">
           <EventCard
             imgPath={"/logo_d.png"}
             heading="BRIDGE MAKING"
@@ -45,7 +45,7 @@ export default function Events() {
           <EventCard
             imgPath={"/logo_d.png"}
             heading="SYMPOSIUM"
-            content={"Loremadf a fa fa df af "}
+            content={"Panel Discussion and Guest Talks"}
             linkURL="/symposium"
           />
         </div>

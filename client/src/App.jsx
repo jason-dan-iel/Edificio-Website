@@ -15,6 +15,7 @@ import Civiq from "./Events/civiq";
 import BridgeMaking from "./Events/bridgemaking";
 import Partbg from "./components/particles";
 import ScrolltoTop from "./components/ScrollToTop";
+import Profiles from "./components/profiles";
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/ourteam" element={<OurTeam />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
+          <Route path="/profile" element={<Profiles />} />
 
           {/* Events Routing */}
           <Route path="/eureka" element={<Eureka />} />

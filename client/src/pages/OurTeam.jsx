@@ -14,7 +14,7 @@ export default function OurTeam() {
           </p>
         </div>
 
-        <div className="grid gap-8 lg:gap-16 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4">
+        <div className="relative grid gap-8 lg:gap-16 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4">
           <TeamCard
             imgPath={"/team_photos/abhinavsinghtawar.jpeg"}
             instaLink={"https://www.instagram.com/abhinavsinghtawar/"}

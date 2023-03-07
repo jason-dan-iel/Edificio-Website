@@ -1,13 +1,15 @@
 import React from "react"; 
 import { NavLink } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar(){
     function addActiveStyle(){
         console.log("hello world")
     }
+    const navigate = useNavigate();
     const handleLogout = () =>{
         localStorage.clear();
+        navigate('/');
         location.reload();
     }
     const token = localStorage.getItem("Token")
@@ -25,7 +27,7 @@ export default function Navbar(){
                         <li><NavLink to="/ourteam" className="px-4" >Team</NavLink> </li>
                         <li>{ (token) ?<NavLink to="/profile" className="px-4" >Profile</NavLink> : <NavLink to="/login" className="px-4" >Log In</NavLink>} </li>
 
-                        <li>{ (token) ? <li className="px-4 hover:cursor-pointer" onClick={handleLogout}>Log Out</li> : <NavLink to="/signup" className="px-4" >Register</NavLink>} </li>
+                        <li>{ (token) ? <p className="px-4 hover:cursor-pointer" onClick={handleLogout}>Log Out</p> : <NavLink to="/signup" className="px-4" >Register</NavLink>} </li>
                     </ul>
                 </section>
             </ul>
