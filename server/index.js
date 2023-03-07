@@ -9,7 +9,13 @@ const authRoute = require('./routes/auth');
 
 // Middleware 
 app.use(express.json());
-app.use(cors());
+const Options = {
+    origin: 'https://www.edificioiitj.org.in/',
+  optionsSuccessStatus: 200, 
+//   Access-Control-Allow-Origin: *
+
+}
+app.use(cors(Options));
 
 // Route middleware
 app.use('/api/user', authRoute);
