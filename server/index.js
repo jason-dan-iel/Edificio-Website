@@ -10,7 +10,7 @@ const authRoute = require('./routes/auth');
 // Middleware 
 app.use(express.json());
 const corsOptions ={
-    origin:'http://localhost:3000', 
+    origin:'https://edificio-website.vercel.app/', 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
