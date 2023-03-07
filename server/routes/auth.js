@@ -69,4 +69,17 @@ router.post("/login", async (req, res) => {
   });
 });
 
+// login
+router.post("/getUser", async (req, res) => {
+  const token = req.body.token;
+  // console.log(token)
+  const user = jwt.verify(token, process.env.TOKEN);
+  const userId = user._id;
+  const userDetail = await User.findOne({
+    _id: userId,
+  });
+  res.status(200).json(userDetail);
+  console.log(userDetail);
+});
+
 module.exports = router;
