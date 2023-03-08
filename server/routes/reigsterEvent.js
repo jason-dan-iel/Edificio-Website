@@ -1,6 +1,5 @@
 const router = require("express").Router();
 const jwt = require('jsonwebtoken');
-const { model } = require("mongoose");
 const Users = require("../model/Users");
 
 router.post("/register", async (req, res) => {
