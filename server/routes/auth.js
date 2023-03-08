@@ -62,7 +62,7 @@ router.post("/login", async (req, res) => {
     return res.status(400).json({ error: "Password is incorrect" });
 
   //   assign a token
-  const token = jwt.sign({ _id: user._id }, "dkjflhadsjkfhaldskjfhadlkjsflakdsjhflkadjshf");
+  const token = jwt.sign({ _id: user._id }, process.env.TOKEN);
   res.header("auth-token", token).json({
     token: token,
     success: "Logged in successfully!",
