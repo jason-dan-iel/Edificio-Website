@@ -91,7 +91,7 @@ export default function OurTeam() {
           <TeamCard
             imgPath={"/team_photos/sainath_pr.jpeg"}
             instaLink={"https://www.instagram.com/sainath_lamdade/"}
-            Name={"Sainath Ashok"}
+            Name={"Sainath Lamdade"}
             Designation={"Public Relation"}
           />
           <TeamCard
