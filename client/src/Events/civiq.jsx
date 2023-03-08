@@ -44,7 +44,7 @@ export default function Civiq(){
               <div className="p-10">
                 <ul>
                   <li>
-                  <button onClick={registerEvent}>Register</button>
+                  <button onClick={registerEvent} className='block m-auto'>Register</button>
                     <h5 className="mb-2 text-2xl font-bold tracking-tight uppercase underline">
                       About:
                     </h5>
