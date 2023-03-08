@@ -11,6 +11,7 @@ router.post("/register", async (req, res) => {
     user.events.push(event);
     user.save();
     res.status(200).json({
+        user: user,
         success: "Event Registered"
     })
 })

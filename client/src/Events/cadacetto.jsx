@@ -19,6 +19,7 @@ export default function Cadacetto() {
     )
 
     const jsonData = await result.json()
+    console.log(jsonData)
     alert(jsonData.success);
     navigate('/events')
 
