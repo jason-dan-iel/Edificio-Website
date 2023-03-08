@@ -16,6 +16,7 @@ export default function Cadacetto() {
           <div className="p-10">
             <ul>
               <li>
+                <button className="text-center block m-auto px-5 py-3 border border-solid border-black rounded-lg hover:bg-blue-300 duration-300">Register</button>
                 <h5 className="mb-2 text-2xl font-bold tracking-tight uppercase underline">
                   About:
                 </h5>
