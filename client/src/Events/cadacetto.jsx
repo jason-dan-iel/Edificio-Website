@@ -1,4 +1,30 @@
+import FormAction from "../components/formaction";
+import { useNavigate } from "react-router-dom";
+
 export default function Cadacetto() {
+
+  const navigate = useNavigate()
+
+  const registerEvent = async (e) => {
+    e.preventDefault();
+    const token = localStorage.getItem('Token')
+    const result = await fetch( 
+      'https://edificio-website.vercel.app/api/events/register',{
+        method: 'POST',
+        body: JSON.stringify({token: token ,event: 'cadacetto'}),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      }
+    )
+
+    const jsonData = await result.json()
+    alert(jsonData.success);
+    navigate('/events')
+
+
+  }
+
   return (
     <section>
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
@@ -16,7 +42,7 @@ export default function Cadacetto() {
           <div className="p-10">
             <ul>
               <li>
-                <button className="text-center block m-auto px-5 py-3 border border-solid border-black rounded-lg hover:bg-blue-300 duration-300">Register</button>
+                <FormAction handleSubmit={registerEvent} text='Register'/>
                 <h5 className="mb-2 text-2xl font-bold tracking-tight uppercase underline">
                   About:
                 </h5>
