@@ -6,6 +6,7 @@ export default function Cadacetto() {
   const navigate = useNavigate()
 
   const registerEvent = async (e) => {
+    
     e.preventDefault();
     const token = localStorage.getItem('Token')
     const result = await fetch( 
