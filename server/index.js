@@ -5,7 +5,7 @@ const cors = require('cors');
 
 // Import routes
 const authRoute = require('./routes/auth');
-const registerEvent = require('./routes/registerEvent');
+const Event = require('./routes/registerEvent')
 
 
 // Middleware 
@@ -14,7 +14,7 @@ app.use(cors());
 
 // Route middleware
 app.use('/api/user', authRoute);
-app.use('/api/events', registerEvent);
+app.use('/api/events', Event);
 
 
 // database connect
