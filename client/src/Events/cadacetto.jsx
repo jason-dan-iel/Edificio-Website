@@ -5,27 +5,27 @@ export default function Cadacetto() {
 
   const navigate = useNavigate()
 
-  const registerEvent = async (e) => {
-    
-    e.preventDefault();
+  const registerEvent = async () => {
     const token = localStorage.getItem('Token')
-    const result = await fetch( 
-      'https://edificio-website-woad.vercel.app/api/events/register',{
-        method: 'POST',
-        body: JSON.stringify({token: token ,event: 'cadacetto'}),
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      }
-    )
-
-    const jsonData = await result.json()
-    console.log(jsonData)
-    alert(jsonData.success);
-    navigate('/events')
-
-
-  }
+    const result = await fetch(  
+      "https://edificio-website-woad.vercel.app/api/events/register", 
+     {
+       method: 'POST',
+       headers: {
+         'Content-Type': 'application/json'
+       },
+       body: JSON.stringify({token: token, event: 'cadacetto'})
+     }
+    ) 
+ 
+     const jsonData = await result.json()
+     try {
+       alert(jsonData.success);
+       navigate('/events')
+     } catch (error) {
+       alert(jsonData.error);
+     }
+   }
 
   return (
     <section>
@@ -44,7 +44,7 @@ export default function Cadacetto() {
           <div className="p-10">
             <ul>
               <li>
-                <FormAction handleSubmit={registerEvent} text='Register'/>
+                <button onClick={registerEvent}>Register</button>
                 <h5 className="mb-2 text-2xl font-bold tracking-tight uppercase underline">
                   About:
                 </h5>

@@ -1,4 +1,32 @@
+import { json, useNavigate } from "react-router-dom";
+
+
 export default function BridgeMaking() {
+  const navigate = useNavigate()
+
+  const registerEvent = async () => {
+   const token = localStorage.getItem('Token')
+   const result = await fetch(  
+    "https://edificio-website-woad.vercel.app/api/events/register",
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({token: token, event: 'bridgemaking'})
+    }
+   ) 
+
+    const jsonData = await result.json()
+    try {
+      alert(jsonData.success);
+      navigate('/events')
+    } catch (error) {
+      alert(jsonData.error);
+    }
+  }
+
+
   return (
     <section>
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
@@ -16,6 +44,7 @@ export default function BridgeMaking() {
           <div className="p-10">
             <ul>
               <li>
+              <button onClick={registerEvent}>Register</button>
                 <h5 className="mb-2 text-2xl font-bold tracking-tight uppercase underline">
                   About:
                 </h5>
