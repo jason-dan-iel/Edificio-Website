@@ -27,12 +27,9 @@ export default function Login() {
   //Handle Login API Integration here
   const authenticateUser = () => {
     const configuration = {
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS"
-      },
       method: "post",
       url: "https://edificio-website.vercel.app/api/user/login",
+      // url : "http://localhost:3000/api/user/login",
       data: loginState,
     };
 
