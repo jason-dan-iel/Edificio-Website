@@ -8,7 +8,7 @@ export default function Profiles() {
     const token = localStorage.getItem("Token")
     const getuserProfile = async () => {
          const user = await fetch(
-            "https://edificio-website.vercel.app/api/user/getUser",{
+            "https://edificio-website-woad.vercel.app/api/user/getUser",{
                 method : "POST",
                 body : JSON.stringify({"token" : token}),
                 headers: {
