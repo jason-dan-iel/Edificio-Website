@@ -46,7 +46,7 @@ export default function Navbar(){
                         <li><NavLink to="/events" className="px-4 mobile:px-2" >Events</NavLink> </li>
                         <li><NavLink to="/ourteam" className="px-4 mobile:px-2" >Team</NavLink> </li>
                         <li>{ (token) ?<NavLink to="/profile" className="px-4 mobile:px-2" >Profile</NavLink> : <NavLink to="/login" className="px-4 mobile:px-2" >Log In</NavLink>} </li>
-                        <li>{ (token) ? <li className="px-4 mobile:px-2 hover:cursor-pointer" onClick={handleLogout}>Log Out</li> : <NavLink to="/signup" className="px-4 mobile:px-2" >Register</NavLink>} </li>
+                        <li>{ (token) ? <p className="px-4 mobile:px-2 hover:cursor-pointer" onClick={handleLogout}>Log Out</p> : <NavLink to="/signup" className="px-4 mobile:px-2" >Register</NavLink>} </li>
                     </ul>
                 </section>
             </ul>

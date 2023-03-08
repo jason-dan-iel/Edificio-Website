@@ -26,7 +26,7 @@ export default function Signup() {
   const createAccount = () => {
     const configuration = {
       method: "post",
-      url: "https://edificio-website-woad.vercel.app/api/user/register",
+      url: "https://server-sigma-neon.vercel.app/api/user/register",
       data: signupState,
     };
     axios(configuration)

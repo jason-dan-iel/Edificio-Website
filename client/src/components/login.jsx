@@ -28,7 +28,7 @@ export default function Login() {
   const authenticateUser = () => {
     const configuration = {
       method: "post",
-      url: "https://edificio-website-woad.vercel.app/api/user/login",
+      url: "https://server-sigma-neon.vercel.app/api/user/login",
       // url : "http://localhost:3000/api/user/login",
       data: loginState,
     };

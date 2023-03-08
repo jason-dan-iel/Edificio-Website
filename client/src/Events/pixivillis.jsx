@@ -7,7 +7,7 @@ export default function Pixivillis() {
   const registerEvent = async () => {
     const token = localStorage.getItem('Token')
     const result = await fetch(  
-      "https://edificio-website-woad.vercel.app/api/events/register", 
+      "https://server-sigma-neon.vercel.app/api/events/register", 
      {
        method: 'POST',
        headers: {
