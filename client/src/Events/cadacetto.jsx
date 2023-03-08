@@ -9,7 +9,7 @@ export default function Cadacetto() {
     e.preventDefault();
     const token = localStorage.getItem('Token')
     const result = await fetch( 
-      'https://edificio-website.vercel.app/api/events/register',{
+      'https://edificio-website-woad.vercel.app/api/events/register',{
         method: 'POST',
         body: JSON.stringify({token: token ,event: 'cadacetto'}),
         headers: {
