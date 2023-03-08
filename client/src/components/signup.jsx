@@ -3,6 +3,7 @@ import { signupFields } from "../constants/formFields";
 import FormAction from "./formaction";
 import Input from "./input";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const fields = signupFields;
 let fieldsState = {};
@@ -11,13 +12,13 @@ fields.forEach((field) => (fieldsState[field.id] = ""));
 
 export default function Signup() {
   const [signupState, setSignupState] = useState(fieldsState);
+  const naviage = useNavigate()
 
   const handleChange = (e) =>
     setSignupState({ ...signupState, [e.target.id]: e.target.value });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(signupState);
     createAccount();
   };
 
@@ -31,6 +32,8 @@ export default function Signup() {
     axios(configuration)
       .then((result) => {
         alert("Registered Successfully");
+        naviage("/")
+        console.log(result)
       })
       .catch((error) => {
         alert(error.error);
