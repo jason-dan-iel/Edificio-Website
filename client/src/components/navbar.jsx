@@ -14,6 +14,7 @@ export default function Navbar(){
     // the method to handle logout
     const handleLogout = () =>{
         localStorage.clear();
+        navigate('/');
         location.reload();
     }
 

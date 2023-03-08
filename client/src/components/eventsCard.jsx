@@ -3,21 +3,22 @@ import { Link } from "react-router-dom";
 
 export default function EventCard({ imgPath, heading, content, linkURL }) {
   return (
-    <div className="max-w-sm bg-orange-200 border border-gray-200 rounded-lg shadow">
+    <div className="max-w-sm bg-gray-900 rounded-md bg-clip-padding backdrop-filter  bg-opacity-60
+    ">
       <img
-        className="mx-auto mb-4 w-36 h-36 rounded-full "
+        className="mx-auto mt-2 mb-4 w-36 h-36 rounded-full "
         src={imgPath}
         alt=""
       />
       <div className="p-5">
         <ul>
           <li>
-            <h5 className="mb-2 text-2xl font-bold tracking-tight">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
               {heading}
             </h5>
           </li>
           <li>
-            <p className="mb-3 font-normal text-gray-700">{content}</p>
+            <p className="mb-3 font-normal text-gray-500">{content}</p>
           </li>
           <li>
             <Link
