@@ -93,6 +93,9 @@ export default function Cadacetto() {
                     <li>Judging will be done on the basis of various criterias.</li>
               </ol>
               <li className="text-blue-700 text-center">Note - All decisions taken by the organizing team will be deemed as final, and no more changes will be encouraged, thus holding the full authority to change any of the above rules as per circumstances.</li>
+              <li className="text-center">Contact : 
+Prince Sonker : +91 9056666050
+</li>
             </ul>
           </div>
         </div>
