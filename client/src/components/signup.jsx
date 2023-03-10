@@ -31,12 +31,11 @@ export default function Signup() {
     };
     axios(configuration)
       .then((result) => {
-        alert("Registered Successfully");
+        alert(result.data.success);
         naviage("/")
-        console.log(result)
       })
       .catch((error) => {
-        alert(error.error);
+        alert(error.response.data.error);
       });
   };
 
