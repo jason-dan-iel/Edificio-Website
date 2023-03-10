@@ -44,7 +44,7 @@ export default function Cadacetto() {
           <div className="p-10">
             <ul>
               <li>
-                <button onClick={registerEvent} className='block m-auto'>Register</button>
+                <button onClick={registerEvent} className='block m-auto px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300'>Register</button>
                 <h5 className="mb-2 text-2xl font-bold tracking-tight uppercase underline">
                   About:
                 </h5>
@@ -69,14 +69,7 @@ export default function Cadacetto() {
                         <li>The time limit will be given</li>
                         <li>Top 10 teams will advance to the next round</li>
                     </ol>
-                <li className="mt-2 font-semibold underline">Tier 2 Elite Round 
-                </li>
-                    <ol className="list-disc px-5">
-                        <li>Similar to tier 1 round but moderate level of problem</li>
-                        <li>The time limit will be given</li>
-                        <li>Top 5 teams will advance to the next round</li>
-                    </ol>
-                <li className="mt-2 font-semibold underline">Tier 3 “The Veteran One” Round
+                <li className="mt-2 font-semibold underline">Tier 2 “The Veteran One” Round
                 </li>
                     <ol className="list-disc px-5">
                         <li>Similar to tier 1 round but difficult level of problem</li>
