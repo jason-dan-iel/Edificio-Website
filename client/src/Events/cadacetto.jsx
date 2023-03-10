@@ -7,23 +7,29 @@ export default function Cadacetto() {
 
   const registerEvent = async () => {
     const token = localStorage.getItem('Token')
-    const result = await fetch(  
-      "https://server-sigma-neon.vercel.app/api/events/register", 
-     {
-       method: 'POST',
-       headers: {
-         'Content-Type': 'application/json'
-       },
-       body: JSON.stringify({token: token, event: 'cadacetto'})
-     }
-    ) 
- 
-     const jsonData = await result.json()
-     try {
-       alert(jsonData.success);
-       navigate('/events')
-     } catch (error) {
-       alert(jsonData.error);
+    if(token){
+
+      const result = await fetch(  
+        "https://server-sigma-neon.vercel.app/api/events/register", 
+       {
+         method: 'POST',
+         headers: {
+           'Content-Type': 'application/json'
+         },
+         body: JSON.stringify({token: token, event: 'cadacetto'})
+       }
+      ) 
+   
+       const jsonData = await result.json()
+       try {
+         alert(jsonData.success);
+         navigate('/events')
+       } catch (error) {
+         alert(jsonData.error);
+       }
+    }else{
+      const jsonData = {error : "Kindly Signup & Login First"};
+      alert(jsonData.error);
      }
    }
 
@@ -78,6 +84,7 @@ export default function Cadacetto() {
                     </ol>
               </ol>
               <li className="font-semibold italic">For all rounds if some students are not able to complete the whole design then the student correctly completing the most of the designs will be screened to next round and it will be decided by Organising Team</li>
+              <li className="text-blue-700 text-center">Note - All decisions taken by the organizing team will be deemed as final, and no more changes will be encouraged, thus holding the full authority to change any of the above rules as per circumstances.</li>
             </ul>
           </div>
         </div>

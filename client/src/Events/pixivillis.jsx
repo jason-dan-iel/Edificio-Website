@@ -6,23 +6,29 @@ export default function Pixivillis() {
 
   const registerEvent = async () => {
     const token = localStorage.getItem('Token')
-    const result = await fetch(  
-      "https://server-sigma-neon.vercel.app/api/events/register", 
-     {
-       method: 'POST',
-       headers: {
-         'Content-Type': 'application/json'
-       },
-       body: JSON.stringify({token: token, event: 'pixivillis'})
-     }
-    ) 
- 
-     const jsonData = await result.json()
-     try {
-       alert(jsonData.success);
-       navigate('/events')
-     } catch (error) {
-       alert(jsonData.error);
+    if(token){
+
+      const result = await fetch(  
+        "https://server-sigma-neon.vercel.app/api/events/register", 
+       {
+         method: 'POST',
+         headers: {
+           'Content-Type': 'application/json'
+         },
+         body: JSON.stringify({token: token, event: 'pixivillis'})
+       }
+      ) 
+   
+       const jsonData = await result.json()
+       try {
+         alert(jsonData.success);
+         navigate('/events')
+       } catch (error) {
+         alert(jsonData.error);
+       }
+    }else{
+      const jsonData = {error : "Kindly Signup & Login First"};
+      alert(jsonData.error);
      }
    }
   return (
@@ -87,6 +93,7 @@ export default function Pixivillis() {
                 <li>Problem statement:  20 points</li>
                 <li>Potential solution: 30 points</li>
               </ol>
+              <li className="text-blue-700 text-center">Note - All decisions taken by the organizing team will be deemed as final, and no more changes will be encouraged, thus holding the full authority to change any of the above rules as per circumstances.</li>
             </ul>
           </div>
         </div>
