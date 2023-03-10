@@ -7,7 +7,7 @@ export default function Eureka(){
   const registerEvent = async () => {
     const token = localStorage.getItem('Token')
     const result = await fetch(  
-      "https://server-sigma-neon.vercel.app/events/register", 
+      "https://server-sigma-neon.vercel.app/api/events/register", 
 
      {
        method: 'POST',
