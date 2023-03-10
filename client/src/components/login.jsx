@@ -35,15 +35,13 @@ export default function Login() {
 
     axios(configuration)
       .then((result) => {
-        alert("logged in successfully");
+        alert(result.data.success);
         localStorage.setItem("Token", result.data.token);
         navigate("/");
         location.reload();
-
       })
       .catch((error) => {
-        console.log(error)
-        alert(error.error);
+        alert(error.response.data.error);
       });
   };
 
