@@ -2,7 +2,7 @@ export default function Schedule() {
   return (
 
 <div className="  text-center px-10  flex justify-center">
-    <table className="text-sm w-screen text-white mobile:text-xs">
+    <table className="text-sm w-screen text-white mobile:text-[11px]">
         <thead className=" text-gray-700 uppercase bg-gray-400">
             <tr className="border-b">
                 <th scope="col" className=" border-r w-1/4">
