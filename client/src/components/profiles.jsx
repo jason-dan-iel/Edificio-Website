@@ -26,7 +26,7 @@ export default function Profiles() {
   }, [])
   return (
     <section className="pt-16  h-[2000px]">
-      <div className="w-full lg:w-4/12 px-4 mx-auto">
+      <div className="w-full lg:w-4/12 px-4 mx-auto flex justify-center">
         <div className="fixed mt-48  flex flex-col min-w-0 break-words bg-white w-96 mb-6 shadow-xl rounded-lg mobile:w-11/12 mobile:-translate-x-1/2 mobile:-translate-y-1/2 mobile:transform mobile:left-1/2 mobile:top-1/4">
           <div className="px-6 my-12">
             <div className="text-center text-xl font-semibold mb-4">Profile</div>
