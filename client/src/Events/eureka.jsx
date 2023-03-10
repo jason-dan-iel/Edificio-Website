@@ -90,7 +90,7 @@ export default function Eureka(){
 
               <li className="text-blue-700 text-center">Note - All decisions taken by the organizing team will be deemed as final, and no more changes will be encouraged, thus holding the full authority to change any of the above rules as per circumstances.</li>
 
-              <li>Contact : 
+              <li className="text-center">Contact : 
 Prince Sonker : +91 9056666050
 </li>
               
