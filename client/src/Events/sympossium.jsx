@@ -33,8 +33,8 @@ export default function Sympossium(){
    }
 
     return(
-        <section >
-      <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
+        <section className="h-[2000px]">
+      <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
           <h2 className="mt-10 mb-2 text-4xl tracking-tight font-extrabold text-white text-center uppercase">
             Symposium
@@ -59,6 +59,9 @@ export default function Sympossium(){
                 Panel discussion and guest talk for helping ideas making and learn something panel these activities can help to foster idea creation and promote learning by providing opportunities
                 </p>
               </li>
+              <li className="text-center">Contact : 
+Prince Sonker : +91 9056666050
+</li>
             </ul>
           </div>
         </div>

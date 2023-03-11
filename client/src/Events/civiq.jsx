@@ -90,6 +90,9 @@ export default function Civiq(){
                   </ol>
                     <li className="px-5">In case of a tie in round 2, teams will be given one or two subjective problem statements</li>
                     <li className="text-blue-700 text-center">Note - All decisions taken by the organizing team will be deemed as final, and no more changes will be encouraged, thus holding the full authority to change any of the above rules as per circumstances.</li>
+                    <li className="text-center">Contact : 
+Rifa Khan : +91 87551 93018
+</li>
                 </ul>
               </div>
             </div>
