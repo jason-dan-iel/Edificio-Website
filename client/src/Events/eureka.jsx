@@ -36,7 +36,7 @@ export default function Eureka(){
         <section>
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
-          <h2 className="mt-8 mb-2 text-4xl tracking-tight font-extrabold text-white text-center">
+          <h2 className="mt-10 mb-2 text-4xl tracking-tight font-extrabold text-white text-center">
             Eureka
           </h2>
         </div>
@@ -50,7 +50,7 @@ export default function Eureka(){
             <ul>
               <li>
               <button onClick={registerEvent} className='block m-auto px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300'>Register</button>
-                <h5 className="mb-2 text-2xl font-bold tracking-tight uppercase underline">
+                <h5 className="my-2 text-2xl font-bold tracking-tight uppercase underline">
                   About:
                 </h5>
               </li>
