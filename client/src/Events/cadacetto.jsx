@@ -74,7 +74,7 @@ export default function Cadacetto() {
           />
           <div className="p-10">
             <ul>
-              <ul className="flex relative justify-center">
+              <ul className="flex  justify-center">
                 <li className="px-2">
                   <button
                     onClick={registerEvent}
