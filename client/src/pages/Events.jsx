@@ -20,14 +20,14 @@ export default function Events() {
             heading="BRIDGE MAKING"
             content={"Testing Engineering Skills and Encouraging Creativity"}
             linkURL="/bridgemaking"
-            Prize = "Prize worth Rs. 4k"
+            Prize = "Prize worth Rs. 4.5k"
           />
           <EventCard
             imgPath={"/events/quiz.png"}
             heading="CIVIQ"
             content={"Test your knowledge and learn more about civil engineering"}
             linkURL="/civiq"
-            Prize = "Prize worth Rs. 4k"
+            Prize = "rize worth Rs. 4.5k"
           />
 
           <EventCard
@@ -35,21 +35,21 @@ export default function Events() {
             heading="CADECETTO"
             content={"Online Event Testing Creativity and Drafting Skills using CAD Platforms"}
             linkURL="/cadecetto"
-            Prize = "Prize worth Rs. 4k"
+            Prize = "rize worth Rs. 4.5k"
           />
           <EventCard
             imgPath={"/events/poster.png"}
             heading="EUREKA"
             content={"Technical Poster Presentation Competition Showcasing Innovations in Civil and Infrastructure Engineering"}
             linkURL="/eureka"
-            Prize = "Prize worth Rs. 4k"
+            Prize = "rize worth Rs. 4.5k"
           />
           <EventCard
             imgPath={"/events/pixivils.png"}
             heading="P I X I V I L S"
             content={"Problem-Solving Competition for Identifying and Solving Civil and Infrastructure Engineering Issues"}
             linkURL="/pixivils"
-            Prize = "Prize worth Rs. 4k"
+            Prize = "rize worth Rs. 4.5k"
           />
           <EventCard
             imgPath={"/events/symp.png"}
