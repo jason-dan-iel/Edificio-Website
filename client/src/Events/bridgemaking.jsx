@@ -1,36 +1,61 @@
 import { json, useNavigate } from "react-router-dom";
 
-
 export default function BridgeMaking() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const registerEvent = async () => {
-   const token = localStorage.getItem('Token')
-   if(token){
-     const result = await fetch(  
-      "https://server-sigma-neon.vercel.app/api/events/register",
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({token: token, event: 'bridgemaking'})
-      }
-     ) 
-  
-      const jsonData = await result.json()
+    const token = localStorage.getItem("Token");
+    if (token) {
+      const result = await fetch(
+        "https://server-sigma-neon.vercel.app/api/events/register",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ token: token, event: "bridgemaking" }),
+        }
+      );
+
+      const jsonData = await result.json();
       try {
         alert(jsonData.success);
-        navigate('/events')
+        navigate("/events");
       } catch (error) {
         alert(jsonData.error);
       }
-   }else{
-    const jsonData = {error : "Kindly Signup & Login First"};
-    alert(jsonData.error);
-   }
-  }
+    } else {
+      const jsonData = { error: "Kindly Signup & Login First" };
+      alert(jsonData.error);
+    }
+  };
 
+  const deregisterEvent = async () => {
+    const token = localStorage.getItem("Token");
+    if (token) {
+      const result = await fetch(
+        "https://server-sigma-neon.vercel.app/api/events/deregister",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ token: token, event: "bridgemaking" }),
+        }
+      );
+
+      const jsonData = await result.json();
+      try {
+        alert(jsonData.success);
+        navigate("/events");
+      } catch (error) {
+        alert(jsonData.error);
+      }
+    } else {
+      const jsonData = { error: "Kindly Signup & Login First" };
+      alert(jsonData.error);
+    }
+  };
 
   return (
     <section>
@@ -48,8 +73,25 @@ export default function BridgeMaking() {
           />
           <div className="p-10">
             <ul>
+              <ul className="flex relative justify-center">
+                <li className="px-2">
+                  <button
+                    onClick={registerEvent}
+                    className="block m-auto px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                  >
+                    Register
+                  </button>
+                </li>
+                <li className="px-2">
+                  <button
+                    onClick={deregisterEvent}
+                    className="block m-auto px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                  >
+                    Deregister
+                  </button>
+                </li>
+              </ul>
               <li>
-              <button onClick={registerEvent} className='block m-auto px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300'>Register</button>
                 <h5 className="my-2 text-2xl font-bold tracking-tight uppercase underline">
                   About:
                 </h5>
@@ -72,12 +114,31 @@ export default function BridgeMaking() {
               </li>
               <ol className="list-decimal px-8">
                 <li>Each team can have a maximum of four participants</li>
-                <li>Bridge making must get completed within the given time limit i.e. 1 hour</li>
-                <li>The bridge must be constructed using only popsicle sticks and white glue</li>
-                <li>The bridge must have a span of 45 centimeters and a minimum height clearance of 15 centimeters</li>
-                <li>The bridge must support a specified weight, which will be determined before the start of the competition</li>
-                <li>The bridge must be self-supporting and cannot be attached to any external structure. The bridge must be able to withstand the weight for at least 30 seconds</li>
-                <li>The team that uses the least number of popsicle sticks to build the bridge will be declared the winner</li>
+                <li>
+                  Bridge making must get completed within the given time limit
+                  i.e. 1 hour
+                </li>
+                <li>
+                  The bridge must be constructed using only popsicle sticks and
+                  white glue
+                </li>
+                <li>
+                  The bridge must have a span of 45 centimeters and a minimum
+                  height clearance of 15 centimeters
+                </li>
+                <li>
+                  The bridge must support a specified weight, which will be
+                  determined before the start of the competition
+                </li>
+                <li>
+                  The bridge must be self-supporting and cannot be attached to
+                  any external structure. The bridge must be able to withstand
+                  the weight for at least 30 seconds
+                </li>
+                <li>
+                  The team that uses the least number of popsicle sticks to
+                  build the bridge will be declared the winner
+                </li>
               </ol>
               <li>
                 <h5 className="my-2 text-2xl font-bold tracking-tight uppercase underline">
@@ -85,15 +146,33 @@ export default function BridgeMaking() {
                 </h5>
               </li>
               <ol className="list-decimal px-8">
-                <li>Structural integrity of the bridge: The bridge must be able to support weight without collapsing</li>
-                <li>Use of the least number of popsicle sticks: Points will be awarded based on the number of popsicle sticks used in the construction of the bridge.</li>
-                <li>Creativity: The bridge's design will be judged on how original and creative it is.</li>
-                <li>Aesthetics: Points will be awarded for the overall appearance of the bridge</li>
+                <li>
+                  Structural integrity of the bridge: The bridge must be able to
+                  support weight without collapsing
+                </li>
+                <li>
+                  Use of the least number of popsicle sticks: Points will be
+                  awarded based on the number of popsicle sticks used in the
+                  construction of the bridge.
+                </li>
+                <li>
+                  Creativity: The bridge's design will be judged on how original
+                  and creative it is.
+                </li>
+                <li>
+                  Aesthetics: Points will be awarded for the overall appearance
+                  of the bridge
+                </li>
               </ol>
-              <li className="text-blue-700 text-center">Note - All decisions taken by the organizing team will be deemed as final, and no more changes will be encouraged, thus holding the full authority to change any of the above rules as per circumstances.</li>
-              <li className="text-center">Contact : 
-Rifa Khan : +91 87551 93018
-</li>
+              <li className="text-blue-700 text-center">
+                Note - All decisions taken by the organizing team will be deemed
+                as final, and no more changes will be encouraged, thus holding
+                the full authority to change any of the above rules as per
+                circumstances.
+              </li>
+              <li className="text-center">
+                Contact : Rifa Khan : +91 87551 93018
+              </li>
             </ul>
           </div>
         </div>
