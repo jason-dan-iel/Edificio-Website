@@ -1,17 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function EventCard({ imgPath, heading, content, linkURL }) {
+export default function EventCard({ imgPath, heading, content, linkURL, Prize }) {
   return (
     <div className="max-w-sm bg-gray-900 rounded-md bg-clip-padding backdrop-filter  bg-opacity-60
     ">
       <img
-        className="mx-auto mt-2 mb-4 w-36 h-36 rounded-full "
+        className="mx-auto mt-2 w-36 h-36 rounded-full "
         src={imgPath}
         alt=""
       />
       <div className="p-5">
         <ul>
+          <li >
+            <h4 className=" text-blue-400 m-2 blink">{Prize}</h4>
+          </li>
           <li>
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">
               {heading}

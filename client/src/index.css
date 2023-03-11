@@ -44,3 +44,23 @@ body{
 #tsparticles{
   z-index: -1;
 }
+
+.blink {
+  animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+#blin{
+  animation: bnker 2s step-start infinite;
+}
+
+@keyframes bnker {
+  50%{
+    opacity: 0;
+  }
+}
