@@ -157,6 +157,7 @@ export default function Civiq() {
                 In case of a tie in round 2, teams will be given one or two
                 subjective problem statements
               </li>
+              <li className="text-red-700 text-center">*Participation : Individual</li>
               <li className="text-blue-700 text-center">
                 Note - All decisions taken by the organizing team will be deemed
                 as final, and no more changes will be encouraged, thus holding

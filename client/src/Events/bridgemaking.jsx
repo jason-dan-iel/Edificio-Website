@@ -164,6 +164,7 @@ export default function BridgeMaking() {
                   of the bridge
                 </li>
               </ol>
+              <li className="text-red-700 text-center">*Participation : Individual</li>
               <li className="text-blue-700 text-center">
                 Note - All decisions taken by the organizing team will be deemed
                 as final, and no more changes will be encouraged, thus holding
