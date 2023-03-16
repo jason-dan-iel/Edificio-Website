@@ -100,9 +100,7 @@ export default function Civiq() {
                 <p className="mb-3 font-normal text-gray-700 text-lg">
                   This quiz competition provides an opportunity for students to
                   test their knowledge and learn more about civil engineering in
-                  a fun and interactive way. We hope that this competition will
-                  encourage students to go into civil engineering and help
-                  improve the built environment.
+                  a fun and interactive way.
                 </p>
               </li>
               <li>
