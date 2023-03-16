@@ -123,8 +123,8 @@ export default function BridgeMaking() {
                   white glue
                 </li>
                 <li>
-                  The bridge must have a span of 45 centimeters and a minimum
-                  height clearance of 15 centimeters
+                  The bridge must have a span of 30 centimeters and a minimum
+                  height clearance of 10 centimeters
                 </li>
                 <li>
                   The bridge must support a specified weight, which will be
